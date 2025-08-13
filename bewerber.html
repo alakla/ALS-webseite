@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Professionelle Reinigung von ALS Dienstleistungen – für maximale Sauberkeit und langfristigen Werterhalt Ihrer Immobilie."
+    />
+    <title>Bewerber | ALS Dienstleistungen</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="apple-touch-icon" sizes="180x180" href="ico/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="ico/favicon-16x16.png">
+    <link rel="manifest" href="ico/site.webmanifest">
+  </head>
+  <body>
+  <div id="header"></div>
+
+  <main>
+<section class="bewerber">
+
+<div class="bewerber-div">
+
+  <div class="bewerber-text">
+  <h2>Jetzt bewerben</h2>
+  <p>
+    Suchen Sie eine neue berufliche Herausforderung?
+    Dann bewerben Sie sich ganz unkompliziert über WhatsApp oder nutzen Sie das Bewerbungsformular unten.
+    wir haben passende Stellenangebote für Sie. <br>
+    Wir freuen uns auf Ihre Nachricht!
+  </p>
+
+  <div class="kontakt-optionen">
+  <!-- زر واتساب -->
+   <p>
+  <a href="https://wa.me/4917670549424?text=Hallo,%20ich%20möchte%20mich%20bei%20Ihnen%20bewerben."
+    target="_blank"
+    class="whatsapp-link">>> Jetzt per WhatsApp bewerben</a></p>
+  <p><strong>Oder:</strong> füllen Sie bitte das folgende Formular aus:</p>
+  </div>
+</div>
+
+<form id="bewerberForm" class="bewerberForm" action="/bewerbung" method="POST" enctype="multipart/form-data">
+    
+  <legend>Bewerbungsformular</legend>
+  <div class="input-container">
+    <select id="anrede" name="anrede" required>
+      <option value="" disabled selected hidden></option>
+      <option value="Herr">Herr</option>
+      <option value="Frau">Frau</option>
+      
+    </select>  
+      <label for="anrede">Anrede *</label>
+    <div class="error-message"></div>
+    </div>
+
+    <div class="input-container">
+    <input type="text" name="vorname" id="vorname" minlength="2" maxlength="50" required>
+    <label for="vorname">Vorname *</label>
+    <div class="error-message"></div>
+    </div>
+
+    <div class="input-container">
+    <input type="text" name="nachname" id="nachname" minlength="2" maxlength="50" required>
+    <label for="nachname">Nachname *</label>
+    <div class="error-message"></div>
+    </div>
+
+      <div class="input-container">
+    <input type="email" name="email" id="email" maxlength="100" required>
+    <label for="email">E-Mail *</label>
+    <div class="error-message"></div>
+    </div>
+
+    <div class="input-container">
+    <input type="text" name="telefon" id="telefon" pattern="^(\+49|0)[1-9][0-9]{6,13}$" title="Bitte geben Sie eine gültige Telefonnummer ein, z.B. +491512345678 oder 015112345678" maxlength="20">
+    <label for="telefon">Telefonnummer</label>
+    <div class="error-message"></div>
+    </div>
+
+    <div class="input-container">
+    <input type="text" name="beruf" id="beruf" minlength="2" maxlength="100" required>
+    <label for="beruf">Beruf *</label>
+    <div class="error-message"></div>
+    </div>
+
+    <div class="input-container">
+    <input type="text" name="verfuegbar" id="verfuegbar" pattern="\d{2}\.\d{2}\.\d{4}" maxlength="10" required>
+    <label for="verfuegbar">Verfügbar ab: (TT.MM.JJJJ) *</label>
+    <div class="error-message"></div>
+    </div>
+      
+
+
+    <!--   <label for="adresse">Straße und Hausnummer:</label>
+      <input type="text" id="adresse" required>
+
+      <label for="plz">PLZ:</label>
+      <input type="text" id="plz" required>
+
+      <label for="ort">Ort:</label>
+      <input type="text" id="ort" required> -->
+
+      <!-- <label for="starttermin">Starttermin:</label>
+      <input type="date" id="starttermin" name="starttermin" required> -->
+
+      <div class="input-container lebenslauf-container">
+      <label for="lebenslauf">Lebenslauf hochladen (PDF, DOC, DOCX – max. 1 MB) *</label>
+      <input type="file" id="lebenslauf" name="lebenslauf" accept=".pdf,.doc,.docx" required>
+      <div class="error-message"></div>
+      </div>
+
+        <label>
+    <small>* Pflichtfelder</small>
+    </label>
+  <div class="datenschutz-div">
+  <input type="checkbox" id="datenschutz" name="datenschutz" required>
+  <label for="datenschutz">
+    Mit dem Absenden des Formulars stimme ich der Speicherung und Nutzung meiner Daten zum Zweck der Kontaktaufnahme mit der ALS Dienstleistungen zu.
+    Meine Daten werden nicht an Dritte weitergegeben.
+  <!-- <span class="privacy-hint"> -->
+    <!-- Hinweis: Sie können Ihre Einwilligung jederzeit per E-Mail an als.dienstleistungen@gmail.com widerrufen. -->
+  <!--   Weitere Informationen finden Sie in unserer 
+  <a href="datenschutz.html" target="_blank">Datenschutzerklärung</a>. -->
+  <!-- </span> -->
+  </label>
+  <div class="error-message"></div>
+</div>
+
+
+      <div class="btn-div">
+      <button type="submit" class="btn senden">Bewerbung senden</button>
+      </div>
+  </form>
+    
+
+    <div id="dankeNachricht" class="hidden"></div>
+</div>
+</section>
+  </main>
+    
+<div id="footer"></div>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta
+      name="description"
+      content="Professionelle Reinigung von ALS Dienstleistungen – für maximale Sauberkeit und langfristigen Werterhalt Ihrer Immobilie."
+    />
+  <title>Transport Anfrage | ALS Dienstleistungen</title>
+  <link rel="stylesheet" href="style.css">
+  <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="apple-touch-icon" sizes="180x180" href="ico/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="ico/favicon-16x16.png">
+    <link rel="manifest" href="ico/site.webmanifest">
+
+  
+</head>
+<body>
+
+  <div id="header"></div>
+  <main>
+<section class="transportformular-section">
+
+<div class="transportformular-div">
+
+  <div class="transportformular-text">
+  <h2>Transport Anfrage</h2>
+  <p>
+    Ob privater Umzug oder gewerblicher Transport – wir stehen Ihnen zuverlässig und flexibel zur Seite.
+  Kontaktieren Sie uns per WhatsApp oder füllen Sie einfach das folgende Formular aus, und unser Team wird sich schnellstmöglich mit Ihnen in Verbindung setzen, 
+  um alle Details individuell mit Ihnen zu besprechen.
+  </p>
+
+  <div class="kontakt-optionen">
+  <!-- زر واتساب -->
+   <p>
+  <a href="https://wa.me/4917670549424?text=Hallo,%20ich%20möchte%20mich%20bei%20Ihnen%20bewerben."
+    target="_blank"
+    class="whatsapp-link">>> Jetzt per WhatsApp kontaktieren</a></p>
+  <p><strong>Oder:</strong> füllen Sie bitte das folgende Formular aus:</p>
+  </div>
+</div>
+
+<form id="transportformular" class="transportformular" action="/transport" method="POST">
+    
+  <legend>Transportformular</legend>
+  <div class="input-container">
+    <select id="anrede" name="anrede" required>
+      <option value="" disabled selected hidden></option>
+      <option value="Herr">Herr</option>
+      <option value="Frau">Frau</option>
+      
+      
+    </select>  
+      <label for="anrede">Anrede *</label>
+    <div class="error-message"></div>
+    </div>
+
+    <div class="input-container">
+    <input type="text" name="vorname" id="vorname" minlength="2" maxlength="50" required>
+    <label for="vorname">Vorname *</label>
+    <div class="error-message"></div>
+    </div>
+
+    <div class="input-container">
+    <input type="text" name="nachname" id="nachname" minlength="2" maxlength="50" required>
+    <label for="nachname">Nachname *</label>
+    <div class="error-message"></div>
+    </div>
+
+      <div class="input-container">
+    <input type="email" name="email" id="email" maxlength="100" required>
+    <label for="email">E-Mail *</label>
+    <div class="error-message"></div>
+    </div>
+
+    <div class="input-container">
+    <input type="text" name="telefon" id="telefon" pattern="^(\+49|0)[1-9][0-9]{6,13}$" title="Bitte geben Sie eine gültige Telefonnummer ein, z.B. +491512345678 oder 015112345678" maxlength="20">
+    <label for="telefon">Telefonnummer</label>
+    <div class="error-message"></div>
+    </div>
+  <div class="input-container">
+    <input type="text" name="von" id="von" minlength="2" maxlength="100" required>
+    <label for="von">Adresse(von) *</label>
+    <div class="error-message"></div>
+    </div>
+
+      <div class="input-container">
+    <input type="text" name="nach" id="nach" minlength="2" maxlength="100" required>
+    <label for="nach">Adresse(nach) *</label>
+    <div class="error-message"></div>
+    </div>
+    
+
+    <div class="input-container">
+    <input type="text" name="datum" id="datum" pattern="\d{2}\.\d{2}\.\d{4}" maxlength="10" required>
+    <label for="datum">Datum: (TT.MM.JJJJ) *</label>
+    <div class="error-message"></div>
+    </div>
+      
+  <div class="input-container">
+    <textarea id="gegenstaende" name="gegenstaende" minlength="10" maxlength="1000" rows="6" required></textarea>
+    <label for="gegenstaende">Transportierte Gegenstände und gewünschte Zusatzleistungen ( Packen, Tragen, Auf-Abbauen) *</label>
+      <div class="error-message"></div>
+    </div>
+    
+      <label>
+      <small id="charCount">1000 Zeichen verbleibend</small>
+    <br>
+    <small>* Pflichtfelder</small>
+    </label>
+
+
+  <div class="datenschutz-div">
+  <input type="checkbox" id="datenschutz" name="datenschutz" required>
+  <label for="datenschutz">
+    Mit dem Absenden des Formulars stimme ich der Speicherung und Nutzung meiner Daten zum Zweck der Kontaktaufnahme mit der ALS Dienstleistungen zu.
+    Meine Daten werden nicht an Dritte weitergegeben.
+  </label>
+  <div class="error-message"></div>
+</div>
+
+
+      <div class="btn-div">
+      <button type="submit" class="btn senden">Anfrage senden</button>
+      </div>
+  </form>
+    
+
+    <div id="dankeNachricht3" class="hidden"></div>
+</div>
+</section>
+
+
+  <!-- <section class="transport-container">
+    <img src="Images/liefern2.jpg" alt="Transport Bild" class="transport-image">
+
+    <h2>Transportservice Anfrage</h2>
+
+    <form class="transport-form" action="/submit-transport" method="POST">
+      <label for="anrede">Anrede</label>
+      <input type="text" id="anrede" name="anrede" required>
+
+      <label for="name">Vorname</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="nachname">Nachname</label>
+      <input type="text" id="nachname" name="nachname" required>
+
+      <label for="email">E-Mail</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="telefon">Telefonnummer (optional)</label>
+      <input type="tel" id="telefon" name="telefon">
+
+      <label for="von">Von (Adresse)</label>
+      <input type="text" id="von" name="von" required>
+
+      <label for="bis">Bis (Adresse)</label>
+      <input type="text" id="bis" name="bis" required>
+
+      <label for="datum">Datum</label>
+      <input type="date" id="datum" name="datum" required>
+
+      <label for="nachricht">Nachricht</label>
+      <textarea id="nachricht" name="nachricht" required></textarea>
+
+      <button type="submit">Absenden</button>
+    </form>
+  </section> -->
+</main>
+<div id="footer"></div>
+<script src="script.js"></script>
+</body>
+</html>

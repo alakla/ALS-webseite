@@ -1,0 +1,2274 @@
+:root {
+  /* colors */
+  --farbe2: rgb(3, 120, 174); /**/
+  --farbe1: rgb(35, 35, 35); /**/
+  --farbe3: rgb(21, 35, 62);
+
+  --border-farbe:rgb(0, 12, 20);
+  --bg-weiss: rgb(198, 195, 195);
+
+  --bg-grau1: rgba(54, 55, 55, 0.5); /**/ /*  تم */
+  --bg-grau2: rgba(54, 55, 55, 0.8);
+  --bg-grau3: rgba(54, 55, 55, 0.9);
+  --bg-max-grau: rgb(54, 55, 55);
+
+  --bg-gruen1:rgba(9, 36, 44, 0.7);
+  --bg-gruen2:rgba(9, 36, 44, 0.8);
+  --bg-gruen3:rgba(9, 36, 44, 0.9);
+  --bg-max-gruen:rgb(9, 36, 44);
+  --bg-gruen: rgba(11, 27, 33, 0.9);
+
+  --bg-blau0000: rgb(4,39,65);
+  --bg-blau000: rgb(95, 119, 170);
+  --bg-blau00: rgb(51, 89, 172);
+  
+  --bg-blau: rgb(17, 58, 90);
+  --bg-blau-3: rgba(17, 58, 90,0.3);
+  --bg-blau0: rgba(17, 58, 90,0.6);
+  --bg-blau1: rgba(17, 58, 90,0.7);
+  --bg-blau2: rgba(17, 58, 90,0.8);
+  --bg-blau3: rgba(17, 58, 90,0.9);
+  --bg-blau-dunkel: rgb(0, 12, 20);
+  --bg-blau-light: rgb(37, 80, 113);
+
+  --bg-hell-blau:  rgb(93, 141, 179);
+  --bg-hell-blau0: rgba(93, 141, 179, 0.6);
+  --bg-hell-blau1: rgba(93, 141, 179, 0.7);
+  --bg-hell-blau2: rgba(93, 141, 179, 0.8);
+  --bg-hell-blau3: rgba(93, 141, 179, 0.9);
+
+  --bg-orange: rgb(199, 102, 18);
+  --bg-orange0: rgb(199, 102, 18, 0.6);
+  --bg-orange1: rgb(199, 102, 18, 0.7);
+  --bg-orange2: rgb(199, 102, 18, 0.8);
+  --bg-orange3: rgb(199, 102, 18, 0.9);
+
+  --bg-hell-gruen: rgba(99, 159, 99, 0.4);
+  /* --textfarbe: #d5e5ffff; */
+  /* --textfarbe: rgb(90, 228, 247); */
+  /* --textfarbe: rgb(10, 10, 10); */
+  --textfarbe: rgb(237, 232, 232);
+  --textfarbe-standard: rgb(51, 51, 51);
+
+  /* --h-farbe:rgb(63, 164, 253); */
+  --h-farbe: #38b3f5;
+  /* --h-farbe: #f58438; */
+  /* --h-farbe: #068286; */
+  /* --h-farbe: #143e57; */
+  --textfarbe-light: #ffffff;
+  --text-shadow: 
+    -1px -1px 0 black,
+     1px -1px 0 black,
+    -1px  1px 0 black,
+     1px  1px 0 black;
+
+     --text-shadow-hell: 
+    -0.5px -0.5px 0 #38b3f5,
+     0.5px -0.5px 0 #38b3f5,
+    -0.5px  0.5px 0 #38b3f5,
+     0.5px  0.5px 0 #38b3f5;
+
+     --text-shadow-white: 
+    -0.5px -0.5px 0 white,
+     0.5px -0.5px 0 white,
+    -0.5px  0.5px 0 white,
+     0.5px  0.5px 0 white;
+     --text-shadow-orange: 
+    -0.5px -0.5px 0 #c76612,
+     0.5px -0.5px 0 #c76612,
+    -0.5px  0.5px 0 #c76612,
+     0.5px  0.5px 0 #c76612;
+
+
+  --farbe-success: #28a745;
+  --farbe-danger: #dc3545;
+  --farbe-warning: #ffc107;
+  --farbe-info: #17a2b8;
+  /* 📏 مسافات مرنة (Responsive Spacing) باستخدام clamp */
+  /* الحد الاقصى , القيمة المفضلة , الحد الادنى */ /* clamp   */
+  --space-3xs: clamp(0.03125rem, 0.075vw, 0.0625rem);
+  --space-2xs: clamp(0.0625rem, 0.15vw, 0.125rem);
+  --space-xs: clamp(0.125rem, 0.3vw, 0.25rem);
+  --space-s: clamp(0.25rem, 0.6vw, 0.5rem);
+  --space-m: clamp(0.5rem, 1.2vw, 1rem);
+  --space-l: clamp(1rem, 2.4vw, 2rem);
+  --space-ll: clamp(1.5rem, 3.4vw, 2.5rem);
+  --space-xl: clamp(2rem, 4.8vw, 4rem);
+  --space-xll: clamp(3rem, 7.2vw, 6rem);
+  --space-2xl: clamp(4rem, 9.6vw, 8rem);
+  --space-3xl: clamp(6rem, 14.4vw, 12rem);
+  --space-4xl: clamp(8rem, 19.2vw, 16rem);
+
+  /* ✨ Padding للأقسام */
+  --section-padding-m: clamp(1rem, 5vw, 4rem);
+  --section-padding-l: clamp(2rem, 8vw, 6rem);
+
+  /* ✍️ الخط */
+
+  --font: 'Source Sans Pro',sans-serif;
+  --font-size-s: 0.875rem;
+  --font-size-m: 1rem; /*  تم */
+  --font-size-l: 1.25rem;
+  --font-size-xl: 1.75rem;
+}
+
+/***** ALLGEMEIN ********************************************/
+/***** ALLGEMEIN ********************************************/
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+/*   position: relative; */
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  /*هذا يجعل حساب الأبعاد أكثر بديهية وأسهل في التصميم.padding و border. يعني أن العرض والارتفاع يشملان   */
+  font-family: var(--font);
+  font-size: var(--font-size-m);
+  color: var(--textfarbe);
+  font-style: normal;
+  letter-spacing: var(--space-3xs);
+  background-color: var(--bg-blau);
+/*   text-shadow: var(--space-2xs) var(--space-2xs) var(--space-s) black;
+ */}
+ 
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  scroll-behavior: smooth;
+  
+}
+
+*:before,
+*:after {
+  box-sizing: inherit;
+} /* htmlوبالتالي عندما نريد تغييرها لكامل المشروع يكفي ان نغير القيمة في عنصر  html كل العناصر ترث القيمة من  عنصر ال  */
+
+/***** BODY ********************************************/
+/***** BODY ********************************************/
+
+/*body{ 
+  background-color: var(--h-farbe); */
+   /* background: linear-gradient(var(--bg-blau1)),url("Images/ur2.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+}*/
+
+/***** HEADER ********************************************/
+/***** HEADER ********************************************/
+
+header {
+  
+  box-shadow: 0 10px 10px var(--bg-orange1);
+  /* border-bottom: var(--bg-orange) 16px solid; */
+   background: linear-gradient(
+    to top,
+    #386e98 0%,
+    #26587e 50%,
+    var(--bg-blau) 100%
+  ); 
+  width: 100%;
+  position: fixed;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding: var(--space-s) var(--space-xl);
+  align-items: center; 
+  z-index: 999;
+}
+.header-nav {
+  align-self: flex-end;
+
+}
+.logo {
+  max-height: var(--space-2xl);
+}
+.menu {
+  list-style: none;
+  display: flex;
+  gap: var(--space-l);
+}
+
+.menu li, .dropdown-menu li {
+  position: relative;
+  display: inline-block;
+  border-radius: 5%;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+}
+.dropdown-menu li{
+  padding-inline: 0;
+  width: 100%;
+  text-align: center;
+}
+
+
+
+.menu li a , .dropdown-menu li a {
+  padding: var(--space-m);
+  display: block;
+  color: var(--bg-blau-dunkel);
+  /* text-shadow: var(--text-shadow-hell); */
+  text-decoration: none;
+  font-weight: bold;
+  
+}
+
+.dropdown-menu li:hover, .menu li:hover,
+.dropdown-menu li:focus-within, .menu li:focus-within {
+  background-color: var(--h-farbe);
+}
+
+.dropdown-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-s);
+  text-decoration: none;
+}
+ 
+ .menu-toggle {
+
+  display: none;
+  text-decoration: none;
+  font-size: var(--font-size-xl);
+  font-style: normal;
+  cursor: pointer;
+  user-select: none;
+  padding-inline: var(--space-s);
+  border: 2px var(--h-farbe) solid;
+  border-radius: 25%;
+  color: var(--h-farbe);
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  display: block;
+  position: absolute;
+  top:110%; /* أسفل الزر مباشرة */
+  left: 0;
+  background-color: #386e98; 
+  border-radius: 5%;
+  min-width: 10rem;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-0.7rem);
+  transition: opacity 0.6s ease, transform 0.6s ease, visibility 0.6s ease;
+}
+
+.dropdown.open .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  
+}
+
+.arrow {
+  display: inline-block;
+  font-size: var(--font-size-s);
+  transition: transform 0.6s ease;
+}
+
+
+
+.dropdown.open .arrow{
+  transform: rotate(180deg);
+}
+
+
+/***** MAIN ********************************************/
+/***** MAIN ********************************************/
+main{
+  min-height: 100%;
+  flex: 1;
+  /* display: flex;
+  flex-direction: column; */
+  
+}
+
+.section-startseite {
+  min-height: 100%;
+  padding-top: calc(5* var(--space-2xl));
+  padding-bottom: var(--space-2xl);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    transparent 50%,
+    var(--bg-blau) 100%
+  ),
+  url("Images/urein2.png");
+  
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center top; 
+}
+
+.reinigung-div,
+.bewerber {
+  /* position: relative; */
+  min-height: 100%;
+  padding-top: var(--space-3xl);
+}
+/*
+.startseite,
+.r-div {
+  /* position: fixed; */
+/*   background: linear-gradient(to right,var(--bg-grau2),var(--bg-gruen2)),url("Images/ur2.png");
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; */
+
+.overlay-text {
+  /* position: relative; */
+  /* position: absolute; */
+/*   top: 0;
+  left: 0; */
+/*   width: 100%;
+  min-height: 100%; */
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: var(--bg-blau1);
+  padding: var(--space-xl);
+  border-radius: 50%;
+  /* margin-inline: var(--space-4xl); */
+  box-shadow: 0 10px 10px var(--bg-orange1);
+  opacity: 0;
+  transform: translateY(-50px) scale(0.95);
+  animation: welcomeIn 1.5s ease-out forwards;
+  animation-delay: 0.1s;
+}
+.overlay-text label {
+  font-size: var(--font-size-xl);
+  margin-bottom: var(--space-m);
+  color: var(--bg-orange);
+  /* text-shadow: var(--text-shadow); */
+  text-decoration: none;
+  font-weight: bold;
+}
+.overlay-text p {
+  font-size: var(--font-size-m);
+  color: var(--bg-blau-dunkel);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* الحركة */
+@keyframes welcomeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px) scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+.btn {
+  display: inline-block;
+  background-color: var(--bg-blau);
+  /* background-image: linear-gradient(10deg,var(--bg-blau) 75%,var(--bg-weiss));
+   */
+  padding: var(--space-s) var(--space-m);
+  text-decoration: none;
+  cursor: pointer;
+  font-size: var(--font-size-s);
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  color: var(--bg-orange);
+  border-radius: 2px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: var(--bg-orange);
+  transition: transform 0.5s ease-in-out;
+  transform: scale(1);
+}
+.btn:hover {
+  transform: scale(1.1);
+}
+
+
+
+/***********************************************************/
+/**************** CSS: تصميم قسم Reinigungsdienste *************************/
+.reinigung{
+    
+       background: linear-gradient(
+    to top,
+    #386e98 0%,
+    #26587e 50%,
+    var(--bg-blau) 100%
+  ); 
+}
+
+.reinigungsdienste-intro {
+  /* background-color: #2a4c6c; */
+  padding-top: var(--space-2xl);
+  padding-inline:  var(--space-l);
+  text-align: center;
+  border-top: 3px solid var(--bg-orange);
+  
+}
+
+.reinigungsdienste-intro .container {
+  /* padding-top: var(--space-xl); */
+  max-width: 45%;
+  margin: 0 auto;
+  text-align: justify;
+}
+
+.reinigungsdienste-intro h2 ,
+.personalservice-text h2,
+.transport-text h2 {
+  margin-inline: 30%;
+  margin-bottom: var(--space-xl);
+    color: var(--bg-orange);
+  font-weight: 800;
+  padding: var(--space-m);
+  /* border: 1px var(--bg-blau-dunkel) solid; */
+  border-radius: 5%;
+  box-shadow: 0 20px 10px var(--bg-blau-dunkel);
+}
+
+.reinigungsdienste-intro p {
+  color: black;
+font-size: var(--font-size-m);
+line-height: var(--space-l);
+font-weight: normal;
+    /* color: #a2a2a3; */
+  /* color: var(--bg-blau-dunkel); */
+  /* text-shadow: var(--text-shadow-hell); */
+}
+
+/*********************************************************/
+/********************Reinigungs-Boxes*********************/
+/*********************************************************/
+/*.reinigungsdienste-section{
+ background: linear-gradient(var(--bg-blau1), var(--bg-blau1)), url("Images/urein1.png");
+background-size: cover;       
+  background-position: center;  
+  background-repeat: no-repeat;
+  
+}*/
+
+.reinigungsdienste-section {
+  /* background-color: #2a4c6c; */
+  /* background: linear-gradient(#2a4c6c, white); */
+  padding: var(--space-2xl) var(--space-l);
+  text-align: center;
+  border-bottom: 3px solid var(--bg-orange);
+  /* position: relative; */
+  /* height: 100%; */
+
+}
+ 
+
+/* .reinigungsdienste-section h2 {
+  
+  margin-inline: 30%;
+  
+  margin-bottom: var(--space-xl);
+    color: var(--bg-blau-dunkel);
+  font-weight: 800;
+  background-color: var(--bg-orange2);
+  padding: var(--space-m);
+  border-radius: 50%;
+  box-shadow: 0 20px 10px var(--bg-blau);
+} */
+
+.services-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--space-xl);
+}
+.unterhaltsreinigung-box{
+background: linear-gradient(to top,
+      transparent 0%,
+    transparent 25%,
+    var(--bg-blau1) 50%,
+    var(--bg-blau2) 70%,
+    var(--bg-blau) 100%
+  ),
+  url("Images/markt.png");
+}
+.fassadenreinigung-box{
+  background: linear-gradient(to top,
+      transparent 0%,
+    transparent 25%,
+    var(--bg-blau1) 50%,
+    var(--bg-blau2) 70%,
+    var(--bg-blau) 100%
+  ),
+  url("Images/farein.png");
+}
+.fensterreinigung-box{
+  background: linear-gradient(to top,
+    transparent 0%,
+    transparent 25%,
+    var(--bg-blau1) 50%,
+    var(--bg-blau2) 70%,
+    var(--bg-blau) 100%
+  ),
+  url("Images/rein2.png");
+}
+.teppichreinigung-box{
+  background: linear-gradient(to top,
+      transparent 0%,
+    transparent 25%,
+    var(--bg-blau1) 50%,
+    var(--bg-blau2) 70%,
+    var(--bg-blau) 100%
+  ),
+  url("Images/tr2.png");
+}
+.gebaeudereinigung-box{
+background: linear-gradient(to top,
+    transparent 0%,
+    transparent 25%,
+    var(--bg-blau1) 50%,
+    var(--bg-blau2) 70%,
+    var(--bg-blau) 100%
+  ),
+  url("Images/grein.png");
+}
+.sonderreinigung-box{
+  background: linear-gradient(to top,
+    transparent 0%,
+    transparent 25%,
+    var(--bg-blau1) 50%,
+    var(--bg-blau2) 70%,
+    var(--bg-blau) 100%
+  ),
+  url("Images/sr.png");
+}
+
+
+.service-box {
+ border-radius: 2%;
+  border-style: solid;
+  border-width: 2px;
+  border-color: var(--bg-blau-dunkel);
+  background-size: cover;       /* يجعل الصورة تغطي div بالكامل */
+  background-position: center;  /* يضع الصورة في المنتصف */
+  background-repeat: no-repeat; /* يمنع تكرار الصورة */
+  padding-inline: var(--space-m);
+  padding-top: var(--space-m); 
+  padding-bottom: calc( 2 * var(--space-4xl));
+  text-align: center;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease;
+  cursor: pointer;
+  width: 25%;
+  box-shadow: 0 20px 10px var(--bg-blau);
+}
+/* الكلاس عند الظهور */
+.service-box.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* .transport-text h2 {
+  
+    margin-inline: 30%;
+  margin-bottom: var(--space-xl);
+  color: var(--bg-blau-dunkel);
+  font-weight: 800;
+  background-color: var(--bg-orange2);
+  padding: var(--space-m);
+  border-radius: 50%;
+  box-shadow: 0 20px 10px var(--bg-blau-dunkel);
+} */
+
+.service-box:hover {
+  transform: translateY(20px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.service-box h3 {
+  margin-top: var(--space-s);
+  margin-bottom: var(--space-m);
+  color: var(--bg-orange);
+  font-weight: 600;
+  /* text-shadow: var(--text-shadow); */
+  /* text-shadow: var(--text-shadow-hell); */
+}
+
+.service-box p  {
+  /* color: #7dadc9; */
+  /* color: #8a8d8d; */
+  color: black;
+  /* color: #a2a2a3; */
+  font-size: var(--font-size-m);
+  font-weight: normal;
+  line-height: var(--space-ll);
+  /* text-shadow: var(--text-shadow); */
+}
+#mehr{
+  color: #359ed6;
+}
+
+/*********************************************************/
+/********Personalservice*************************************/
+/**********************************************************/
+
+/* .personalservice-section {
+ position: fixed;
+   top: 0vh;
+  bottom: 0vh;
+   width: 100%;
+  height: 100%;
+ background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    transparent 50%,
+    var(--bg-blau) 100%
+  ),
+    url("Images/kasse4.png");
+    background-size: cover;
+  background-repeat: no-repeat;
+  background-position:center;
+  z-index: -1;
+  pointer-events: none;
+   will-change: transform;
+  transform-origin: center top;
+}
+
+.personalservice-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding-top: 600px;
+  
+}
+ */
+ .personalservice-section {
+min-height: 100%;
+padding-top:  calc(3* var(--space-4xl));
+text-align: center;
+background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    transparent 50%,
+    var(--bg-blau) 100%
+  ),
+  url("Images/kasse4.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.personalservice-content {
+  text-align: center;
+  width: 100%;
+} 
+
+
+.personalservice-text{
+    background: linear-gradient(
+    to top,
+    #386e98 0%,
+    #26587e 50%,
+    var(--bg-blau) 100%
+  ); 
+  width: 100%;
+  padding-block: var(--space-xl);
+  padding-inline: var(--space-l);
+  border-top : 3px solid var(--bg-orange);
+  border-bottom : 3px solid var(--bg-orange);
+  text-align: center;
+}
+
+/* .personalservice-content.show {
+  opacity: 1;
+  transform: translateY(0);
+} */
+
+.personalservice-p {
+  max-width: 50%;
+  margin: 0 auto;
+  text-align: justify;
+
+}
+
+/* .personalservice-text h2 {
+  background-color: var(--bg-blau-3);
+} */
+
+.personalservice-text p {
+  color: black;
+font-size: var(--font-size-m);
+line-height: var(--space-l);
+font-weight: normal;
+}
+
+.personalservice-image {
+  width: 100%;
+  text-align: center;
+  padding-top: var(--space-l);
+  padding-bottom: var(--space-l);
+}
+/*****/
+
+.personalservice-grid {
+    display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: var(--space-xl);
+  padding-top: var(--space-xl);
+  padding-bottom: var(--space-xl);
+}
+
+.span h4 {
+  font-size: var(--font-size-m);
+  color: var(--bg-orange);
+  line-height: var(--space-l);
+}
+
+.hotel{
+  background: linear-gradient(to top,
+    transparent 0%,
+    transparent 50%,
+    var(--bg-blau2) 75%,
+    var(--bg-blau) 100%
+  ),
+  url("Images/rein1.png");
+}
+
+.theke{
+  background: linear-gradient(to top,
+    transparent 0%,
+    transparent 50%,
+    var(--bg-blau2) 75%,
+    var(--bg-blau) 100%
+  ),
+  url("Images/theke4.png");
+}
+.kasse{
+  background: linear-gradient(to top,
+    transparent 0%,
+    transparent 50%,
+    var(--bg-blau2) 75%,
+    var(--bg-blau) 100%
+  ),
+  url("Images/kasse2.png");
+}
+/* .personalservice-image img {
+  width: 75%;
+  min-height: 500px;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+ */
+/* .anfrage-btn{
+
+  padding: var(--space-s) var(--space-m);
+  width: 20%;
+} */
+
+
+
+
+
+/* Responsive */
+@media (max-width: 900px) {
+  .personalservice-content {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .personalservice-image, .personalservice-text {
+    width: 100%;
+  }
+}
+
+
+
+/*********************************************************/
+/********Transport*************************************/
+/**********************************************************/
+
+
+
+.transport{
+min-height: 100%;
+padding-top:  calc(3* var(--space-4xl));
+text-align: center;
+background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    transparent 50%,
+    var(--bg-blau) 100%
+  ),
+  url("Images/transport2.png");
+  
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  
+}
+.transport-div{
+  text-align: center;
+  width: 100%;
+}
+
+
+.transport-text{
+  /* background-color: var(--bg-blau1); */
+  background: linear-gradient(
+    to top,
+    #386e98 0%,
+    #26587e 50%,
+    var(--bg-blau) 100%
+  ); 
+  width: 100%;
+  padding-block: var(--space-2xl);
+  padding-inline: var(--space-l);
+  border-top: 3px solid var(--bg-orange);
+  text-align: center;
+}
+/* .transport-text h2 {
+background-color: var(--bg-blau-3);
+} */
+
+.transport-p{
+  /* padding-top: var(--space-m); */
+  max-width: 45%;
+  margin: 0 auto;
+  text-align: justify;
+
+}
+
+
+.kontakt-kontainer{
+  padding-top: var(--space-xl);
+  max-width: 60%;
+  margin: 0 auto;
+  text-align: center;
+}
+.transport-kontakt{
+  /* padding-top: var(--space-xl); */
+    max-width: 50%;
+  margin: 0 auto; 
+  text-align: start;
+  
+}
+
+/* .transport-kontakt p , */
+.transport-text p  {
+
+  color: black;
+font-size: var(--font-size-m);
+line-height: var(--space-l);
+font-weight: normal;
+ /* overflow: hidden; */
+}
+
+
+.transport-kontakt p a {
+  color: var(--bg-blau0000);
+  text-decoration: none;
+  font-size: var(--font-size-l);
+  line-height: var(--space-ll);
+  font-weight: normal;
+  transition: all 1.4s ease;
+}
+
+.transport-kontakt p a:hover {
+  /* color: var(--h-farbe); */
+  text-decoration: underline;
+}
+
+
+.transport-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--space-xl);
+  padding-top: var(--space-xl);
+  padding-bottom: var(--space-2xl);
+}
+.packen{
+  background: linear-gradient(to top,
+    transparent 0%,
+    transparent 50%,
+    var(--bg-blau2) 75%,
+    var(--bg-blau) 100%
+  ),
+  url("Images/packen.png");
+}
+.tragen{
+  background: linear-gradient(to top,
+      transparent 0%,
+    transparent 50%,
+    var(--bg-blau2) 75%,
+    var(--bg-blau) 100%
+  ),
+  url("Images/transport1.png");
+}
+
+.abbauen{
+  background: linear-gradient(to top,
+    transparent 0%,
+    transparent 50%,
+    var(--bg-blau2) 75%,
+    var(--bg-blau) 100%
+  ),
+  url("Images/abb.png");
+}
+.liefern{
+background: linear-gradient(to top,
+    transparent 0%,
+    transparent 50%,
+    var(--bg-blau2) 75%,
+    var(--bg-blau) 100%
+  ),
+  url("Images/liefern.jpg");
+}
+
+.span {
+ border-radius: 2%;
+  border-style: solid;
+  border-width: 2px;
+  border-color: var(--bg-blau-dunkel);
+  background-size: cover;       /* يجعل الصورة تغطي div بالكامل */
+  background-position: center;  /* يضع الصورة في المنتصف */
+  background-repeat: no-repeat; /* يمنع تكرار الصورة */
+  /* padding-inline: var(--space-m);*/
+  padding-top: var(--space-m); 
+  padding-bottom: calc( 2 * var(--space-4xl));
+  text-align: center; 
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease;
+  /* cursor: pointer; */
+  width: 20%;
+  box-shadow: 0 20px 10px var(--bg-blau);
+}
+
+/* .tragen , .packen , .abbauen , .liefern{
+  flex-grow: 1; 
+  
+} */
+
+/* .span:hover {
+  transform: translateY(-5px);
+  background-color: var(--bg-blau);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+} */
+
+.span h3 {
+/*   background-color: var(--bg-blau);
+  margin-top: var(--space-s);
+  padding-block: var(--space-m);
+  margin-inline: var(--space-l); */
+  color: var(--bg-orange);
+  font-weight: 600;
+  /* border-radius: 5%; */
+  /* box-shadow: 0 20px 10px var(--bg-blau-dunkel); */
+
+}
+/* عند الدخول */
+.span.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+/*********************************************************/
+/**************Transportformular**************************/
+/*********************************************************/
+
+    /* .transport-container {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      background-color: #f8f8f8;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .transport-container h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 2em;
+      color: var(--primary-color, #003366);
+    }
+
+    .transport-form label {
+      display: block;
+      margin-top: 20px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .transport-form input,
+    .transport-form textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-top: 5px;
+      font-size: 1em;
+    }
+
+    .transport-form textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+
+    .transport-form button {
+      margin-top: 30px;
+      width: 100%;
+      padding: 14px;
+      background-color: var(--primary-color, #003366);
+      color: white;
+      font-size: 1em;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .transport-form button:hover {
+      background-color: var(--secondary-color, #0055aa);
+    }
+
+    .transport-image {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 30px;
+    }
+
+    @media (max-width: 600px) {
+      .transport-container {
+        padding: 20px 15px;
+      }
+    }
+  
+ */
+
+
+/*********************************************************/
+/**************Reinigungs-Seiten**************************/
+/*********************************************************/
+.ur-bg{
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    transparent 50%,
+    var(--bg-blau) 100%
+  ),
+  url("Images/markt.png");
+}
+
+.far-bg{
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    transparent 50%,
+    var(--bg-blau) 100%
+  ),
+  url("Images/farein.png");
+}
+.fer-bg{
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    transparent 50%,
+    var(--bg-blau) 100%
+  ),
+  url("Images/rein2.png");
+}
+.tepr-bg{
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    transparent 50%,
+    var(--bg-blau) 100%
+  ),
+  url("Images/tr2.png");
+}
+.ger-bg{
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    transparent 50%,
+    var(--bg-blau) 100%
+  ),
+  url("Images/grein.png");
+}
+.sor-bg{
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    transparent 50%,
+    var(--bg-blau) 100%
+  ),
+  url("Images/sr.png");
+}
+
+.reinigung-div{
+  padding-top:  calc(3* var(--space-4xl));
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position:center;
+  background-attachment: fixed;  
+}
+
+
+.r-inhalt , .text-container2{
+/*   display: flex;
+  padding-inline: var(--space-m);
+  padding-top: var(--space-s);
+  height: calc(100vh - (var(--space-3xl)));
+  flex-flow: row nowrap;
+  gap: var(--space-xl);
+  justify-content: center;
+  align-content: center;
+  align-items: center; */
+
+  position: relative;
+  display: flex;
+  background: linear-gradient(
+    to top,
+    #386e98 0%,
+    #26587e 50%,
+    var(--bg-blau) 100%
+  ); 
+  /* margin-top: var(--space-3xl); */
+  /* margin-inline: 30%; */
+  padding-top: var(--space-xl);
+  padding-bottom:  var(--space-xl);
+  width: 100%;
+  min-height: 100%;
+  /* padding-inline: var(--space-m);
+  padding-top: var(--space-s);
+  height: calc(100% - (var(--space-3xl))); */
+  flex-flow: column nowrap;
+  gap: var(--space-m);
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+
+}
+
+
+
+/* .ur-image-div{
+background: url("Images/markt.png");
+}
+.fa-image-div{
+background: url("Images/far2.png");
+}
+.fen-image-div{
+  background: url("Images/fr.png");
+}
+.tep-image-div{
+  background: url("Images/tr.png");
+}
+.ge-image-div{
+background: url("Images/gr.png");
+}
+.so-image-div{
+background: url("Images/sr.png");
+}
+.image-div {
+  box-shadow: 0 var(--space-l) var(--space-l) #498192;
+  border-radius: var(--space-2xl);
+  border-width: 20px;
+  flex: 1 1 50%;
+  min-height: 80%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+ */
+
+
+
+
+.text-container {
+/*   flex: 1 1 40%;
+  padding-inline: var(--space-l);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: var(--space-l); */
+text-align: center;
+padding: var(--space-l);
+  margin-bottom: 1rem;
+  width: 50%;
+}
+
+.r-h{
+color: var(--bg-orange);
+margin-bottom: var(--space-l);
+text-align:center;
+font-size: var(--font-size-xl);
+}
+.r-p{
+color: black;
+font-size: var(--font-size-m);
+text-align:justify;
+line-height: var(--space-l);
+font-weight: normal;
+padding-bottom: var(--space-l);
+}
+
+/* .text-container2 {
+  position: relative;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  background: linear-gradient(
+    to right,
+    var(--bg-grau1),
+    var(--bg-blau1)
+  );
+  padding: var(--space-m);
+  gap: var(--space-xl);
+} */
+.con2 {
+  /* flex: 1 1 50%; */
+  max-width: 50%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding: var(--space-xl);
+  gap: var(--space-m);
+}
+.text-container2b {
+  border-radius: 2%;
+    background: linear-gradient(
+    to top,
+    #386e98 0%,
+    #26587e 50%,
+    var(--bg-blau) 100%
+  ); 
+  border-style: solid;
+  border-width: 2px;
+  border-color: var(--border-farbe);
+}
+
+/* .r-h-container {
+  margin-bottom: var(--space-m);
+} */
+/* .r-h {
+  color: var(--h-farbe);
+  max-width: 100%;
+}
+.r-p {
+  font-size: var(--font-size-l);
+  font-weight: normal;
+  color: var(--textfarbe);
+  text-align: justify;
+  line-height: var(--space-xl);
+  max-width: 100%;
+  max-height: 100%;
+} */
+.ziel {
+  font-size: var(--font-size-m);
+  line-height: var(--space-l);
+  /* text-align: center; */
+}
+
+/*********************************************************/
+/************************Footer***************************/
+/*********************************************************/
+footer{
+  position: relative;
+  width: 100%;
+  /* padding-top: calc(2 * var(--space-3xl)); */
+  /* background-color: #386e98; */
+  background: linear-gradient(
+    to bottom,
+    #386e98 0%,
+    #26587e 50%,
+    var(--bg-blau) 100%
+  );
+  /* border-top: 3px solid var(--bg-blau-dunkel); */
+}
+
+.footer-container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  padding-top: var(--space-2xl);
+  padding-inline: var(--space-xl);
+  padding-bottom: var(--space-2xl);
+  gap: var(--space-xl);
+  max-width: 100%;
+}
+
+.footer-div {
+  flex: 1 1 auto;
+}
+.footer-logo {
+  flex: 0 1 auto;
+}
+.footer-logo img {
+  max-height: var(--space-3xl);
+}
+
+.footer-div ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-div p,
+.footer-div p a,
+.footer-div ul li a {
+  margin: unset;
+  text-decoration: none;
+  font-size: var(--font-size-m);
+  font-weight: normal;
+  line-height: var(--space-ll);
+  transition: all 0.4s ease;
+}
+.footer-div p{
+  
+  color: var(--h-farbe);
+  color: var(--bg-blau-dunkel);
+  font-weight: bold;
+}
+.footer-div ul li a,
+.footer-div p a {
+  color: var(--bg-blau-dunkel);
+}
+.footer-div h5 {
+  color: var(--bg-orange);
+  font-size: var(--font-size-m);
+  line-height: var(--space-l);
+  /* text-shadow: var(--text-shadow-hell); */
+}
+
+.footer-div ul li a:hover,
+.footer-div p a:hover {
+  /* color: var(--h-farbe); */
+  text-decoration: underline;
+}
+.footer-bottom {
+  text-align: center;
+  padding-block: var(--space-xl);
+  /* border-top: 3px solid var(--bg-orange); */
+    /* box-shadow:inset 0 10px 10px var(--bg-orange1); */
+  /* border-bottom: var(--bg-orange) 16px solid; */
+   background: linear-gradient(
+    to bottom,
+    #386e98 0%,
+    #26587e 50%,
+    var(--bg-blau) 100%
+  );
+}
+.footer-bottom p {
+  font-size: var(--font-size-m);
+  font-weight: bold;
+  color: var(--bg-orange);
+  /* text-shadow: var(--text-shadow); */
+}
+
+/************************************************************************/
+/*********  Bewerber/Personal-Anfrage *************/
+/************************************************************************/
+
+.personal{
+background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    transparent 50%,
+    var(--bg-blau) 100%
+  ),
+  url("Images/kasse1.png");  
+}
+
+.bewerber{
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    transparent 50%,
+    var(--bg-blau) 100%
+  ),
+  url("Images/kasse3.png");
+}
+
+.transportformular-section{
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    transparent 50%,
+    var(--bg-blau) 100%
+  ),
+  url("Images/liefern2.jpg");
+}
+.personal , .bewerber , .transportformular-section{
+padding-top:  calc(3* var(--space-4xl));
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position:center calc(0% + 20px);
+  background-attachment: fixed;  
+}
+
+.bewerber-div,
+.personal-div ,
+.transportformular-div{
+  /* border: #dc3545 2px solid; */
+    position: relative;
+  display: flex;
+  background: linear-gradient(
+    to top,
+    #386e98 0%,
+    #26587e 50%,
+    var(--bg-blau) 100%
+  ); 
+  /* margin-top: var(--space-3xl); */
+  /* margin-inline: 30%; */
+  padding-top: var(--space-xl);
+  padding-bottom:  var(--space-3xl);
+  width: 100%;
+  min-height: 100%;
+  /* padding-inline: var(--space-m);
+  padding-top: var(--space-s);
+  height: calc(100% - (var(--space-3xl))); */
+  flex-flow: column nowrap;
+  gap: var(--space-m);
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.bewerber-text,
+.personal-text,
+.transportformular-text{
+/*  border: var(--bg-max-gruen) 2px solid;
+  border-radius: 5px; 
+   padding: var(--space-m); 
+   background: linear-gradient(
+    to right,
+    var(--bg-grau1),
+    var(--bg-gruen1)
+  ); */ 
+  padding: var(--space-l);
+  margin-bottom: 1rem;
+  width: 50%;
+}
+.bewerber-text h2,
+.personal-text h2 ,
+.transportformular-text h2{
+color: var(--bg-orange);
+margin-bottom: var(--space-l);
+text-align:center;
+font-size: var(--font-size-xl);
+}
+.bewerber-text p,
+.personal-text p,
+.transportformular-text p{
+color: black;
+font-size: var(--font-size-m);
+text-align:justify;
+line-height: var(--space-l);
+font-weight: normal;
+}
+.bewerberForm,
+.personalForm ,
+.transportformular{
+border: var(--bg-max-gruen) 2px solid;
+border-radius: 5px;
+  padding-inline: var(--space-l);
+  padding-block: var(--space-m);
+  width: 50%;
+  /*   background: linear-gradient(
+    to right,
+    var(--bg-grau1),
+    var(--bg-blau1)
+  ); */
+  background-color: #26587e;
+}
+
+.input-container {
+  position: relative;
+  margin-top: 1rem;
+}
+
+
+.kontakt-optionen {
+  
+  /* padding: 1rem; */
+  margin-top: 1rem;
+}
+.kontakt-optionen p {
+  text-align: start;
+}
+.telefon-link , .whatsapp-link{
+  color: var(--h-farbe);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.telefon-link:hover, .whatsapp-link:hover {
+  text-decoration: underline;
+}
+
+/*  .form-row {
+    display: flex;
+    gap: var(--space-s);
+    flex-wrap: wrap;
+  }
+    
+  .form-row > input{
+    flex: 1;
+    min-width: calc(2*(var(--space-2xl)));
+  } */
+/* .bewerberForm label, */
+.personalForm legend ,
+.bewerberForm legend ,
+.transportformular legend{
+  /* border: #d90a59 2px solid; */
+  display: block;
+  margin-top: var(--space-m);
+  font-weight: bold;
+}
+
+.bewerberForm input, .bewerberForm select,
+.personalForm input, .personalForm select,
+.personalForm textarea,
+.transportformular input, .transportformular select,
+.transportformular textarea {
+  width: 100%;
+  min-height: var(--space-ll);
+/*   padding-top: var(--space-m);
+  padding-left: var(--space-m);
+  margin-top: var(--space-s); */
+  padding-top: var(--space-m);
+  padding-bottom: var(--space-s);
+  padding-left: var(--space-s);
+  border: 1px solid var(--bg-max-gruen);
+  border-radius: 5px;
+  outline: none;
+  background-color: rgb(182, 216, 241);
+}
+
+
+/* placeholder label */
+
+
+
+/* .input-container input,
+.input-container select,
+.input-container textarea {
+  width: 100%;
+  padding: 1rem 0.5rem 0.5rem 0.5rem;
+  font-size: 1rem;
+} */
+
+.input-container label {
+  position: absolute;
+  top: 0;
+  left: var(--space-s);
+  color: #333;
+  font-size: 0.8rem;
+  pointer-events: none;
+  /* transition: 0.2s ease all; */
+  background-color: transparent;
+
+  
+}
+
+
+#lebenslauf {
+  color: #333; /* أو أي لون غامق يناسب الخلفية */
+
+}
+
+/*  .input-container input:focus + label,
+ .input-container select:focus + label, */
+/* .input-container input:valid + label, */
+ /* .input-container textarea:focus + label, */ 
+/* .input-container textarea:valid + label */
+/* .input-container input:not(:placeholder-shown) + label,
+.input-container textarea:not(:placeholder-shown) + label */
+/* .input-container select:focus + label,
+.input-container select:valid + label */
+
+
+
+.datenschutz-div {
+/*   border: 1px solid #a6c6de;
+  border-radius: 5px; */
+  width: 100%;
+  display: inline-flex;
+  align-items:flex-start;
+  /* gap: 10px; */
+  font-size: var(--font-size-s);
+ box-sizing: border-box;
+  word-wrap: break-word;
+  padding-block: var(--space-l);
+  
+}
+
+.datenschutz-div input[type="checkbox"] {
+/* margin-top: 4px; */
+width: auto;
+flex-shrink: 0;
+}
+.datenschutz-div label {
+  /* margin-top: 4px; */
+  margin-left: 4px;
+  cursor: pointer;
+   display: block;
+  width: 100%;
+  word-break: break-word;
+  font-size: var(--font-size-s);
+}
+/* .datenschutz-div .privacy-hint {
+  display: block;
+  margin-top: 5px;
+  width: 100%;
+  word-break: break-word;
+  
+}
+
+.datenschutz-div .privacy-hint a {
+  color: var(--h-farbe);
+  text-decoration: none;
+}
+
+.datenschutz-div .privacy-hint a:hover {
+  text-decoration: underline;
+}
+ */
+
+
+
+.btn-div{
+  text-align: left;
+  /* margin-top: 8px; */
+}
+.senden{
+  margin-top: var(--space-m);  
+}
+
+#dankeNachricht,
+#dankeNachricht2 {
+  text-align: center;
+  background: transparent;
+color: var(--h-farbe);
+}
+
+.hidden {
+  display: none;
+}
+
+/* لون الحقل في حال الخطأ */
+.input-error {
+  border: 2px solid red;
+}
+
+/* مظهر رسالة الخطأ */
+.error-message {
+  color: red;
+  font-size: 0.85em;
+  margin-top: 2px;
+}
+
+/************************************************************************/
+/*********  Über uns/ Impressum *************/
+/************************************************************************/
+.uns{
+background: linear-gradient(
+    to bottom,
+    var(--bg-blau2) 0%,
+    var(--bg-blau2) 30%,
+    var(--bg-blau3) 50%,
+    var(--bg-blau3) 70%,
+    var(--bg-blau) 100%
+  ),
+  url("Images/ueber_als.jpg");
+}
+.impressum{
+  background: linear-gradient(
+    to bottom,
+    var(--bg-blau2) 0%,
+    var(--bg-blau2) 30%,
+    var(--bg-blau3) 50%,
+    var(--bg-blau3) 70%,
+    var(--bg-blau) 100%
+  ),
+  url("Images/impressum.jpg");
+}
+.uns-impressum{
+  padding-top: var(--space-2xl);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position:center calc(0% + 20px);
+  background-attachment: fixed;  
+}
+.uns-container , .impressum-container{
+  width: 50%;
+  margin:  auto;
+  padding: var(--space-2xl) var(--space-l);
+  
+  
+}
+ .uns-container h1 , .impressum-container h1 {
+      color: var(--h-farbe);
+      font-size: var(--font-size-xl);
+      margin-bottom: 10px;
+    }
+.impressum-container h3 {
+  color: var(--bg-orange);
+  margin-top: var(--space-xl);
+  margin-bottom: var(--space-m);
+  /* text-decoration:underline; */
+  /* text-shadow: var(--text-shadow-hell); */
+}
+  /* .uns-container  h2 {
+      color: #881818;
+      font-size: 1.5em;
+      margin-top: 30px;
+    } */
+
+  .uns-container  p , .impressum-container p {
+      margin-bottom: 15px;
+      color: var(--bg-blau-dunkel);
+      font-size: var(--font-size-m);
+      font-weight: normal;
+      line-height: var(--space-l);
+      text-align: justify;
+    }
+ .uns-container .highlight {
+      font-weight: bold;
+      color: var(--bg-orange);
+      font-size: 1.1em;
+      margin-top: 20px;
+    }
+
+/************************************************************************/
+/*********  Impressum *************/
+/************************************************************************/
+/* body {
+  font-family: Arial, sans-serif;
+  background-color: #f6f6f6;
+  margin: 0;
+  padding: 0;
+  color: #333;
+} */
+
+/* .kontakt-container {
+  max-width: 900px;
+  margin: var(--space-3xl) auto;
+  padding: 40px 20px;
+  background-color: #fff;
+}
+ */
+/* h1 {
+  color: #005A9C;
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 15px;
+}
+ */
+/* .contact-info {
+  margin-bottom: 30px;
+  line-height: 1.8;
+}
+
+.contact-info strong {
+  display: inline-block;
+  width: 100px;
+} */
+
+
+
+
+/* .whatsapp-button {
+  display: inline-block;
+  
+
+  padding: 12px 20px;
+  border-radius: 6px;
+
+  text-align: center;
+  
+} */
+
+
+
+/* .map-section {
+  margin-top: 30px;
+  border-radius: 8px;
+  overflow: hidden;
+} */
+
+/* @media (max-width: 600px) {
+  .contact-info strong {
+    width: auto;
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  .whatsapp-button {
+    width: 100%;
+    text-align: center;
+  }
+} */
+
+
+/************************************************************************/
+/*********Responsive *************/
+/************************************************************************/
+@media screen and (min-width: 1080px) {
+  
+  .dropdown:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  }
+.dropdown:hover .arrow{
+  transform: rotate(180deg);
+}
+
+}
+/************************************************************************/
+/************************************************************************/
+
+@media (min-width: 510px) and (max-width: 1080px) {
+  .header-nav {
+    width: 100%;
+  }
+    .menu-toggle {
+    display: block;
+    position: absolute;
+    bottom: var(--space-m);
+    right: var(--space-l);
+  }
+  .menu {
+    border-radius: 5%;
+    display: block;
+    position: absolute;
+    top: 100%;
+    right: var(--space-m);
+    background-color: #386e98;
+    line-height: var(--space-xl);
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-0.7rem); /*   تبدأ بانزياح لأعلى وتنسدل للأسفل */
+    transition: opacity 0.6s ease, transform 0.6s ease, visibility 0.6s ease;
+  }
+  .header-nav.open .menu {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+  
+.menu li {
+    display: block;
+    text-align: center;
+    padding-inline: 0;
+  }
+
+.dropdown-menu {
+  background-color:#26587e;
+}
+/* 
+  .dropdown-menu {
+    position: static;
+    transform: none;
+    opacity: 1;
+    display: none;
+  }
+  .dropdown-menu li {
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-1.4rem); /*   تبدأ بانزياح لأعلى وتنسدل للأسفل 
+    transition: opacity 1.6s ease, transform 1.6s ease, visibility 1.6s ease;
+  }
+  .dropdown.open .dropdown-menu li,
+  .dropdown:hover .dropdown-menu li,
+  .dropdown:focus-within .dropdown-menu li {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+      background: linear-gradient(
+    to right,
+    var(--bg-max-grau),
+    var(--bg-blau)
+  );
+  } */
+  .section-startseite {
+  padding-top: calc(5* var(--space-3xl));
+  padding-bottom: calc(2* var(--space-3xl));
+  }
+
+
+  .overlay-text{
+    width: 70%;
+  }
+  .overlay-text label{
+    font-size: var(--font-size-l);
+  }
+
+.service-box , .span{
+ width: 60%;
+}
+.service-box p {
+  font-size: var(--font-size-s);
+}
+
+.reinigungsdienste-intro .container, .transport-p ,
+.personalservice-p {
+  max-width: 80%;
+  }
+  .reinigungsdienste-intro .container p{
+    font-size: var(--font-size-m);
+    line-height: var(--space-xl);
+}
+
+  .transport-text p, .transport-text p a ,
+  .personalservice-text p , .personalservice-text p a{
+    font-size: var(--font-size-m);
+    line-height: var(--space-xl);
+  }
+    .kontakt-kontainer , .transport-kontakt{
+    max-width: 70%;
+  
+  }
+
+
+    .reinigung-div{
+  padding-top: calc(2* var(--space-4xl)) ;
+  background-size: contain;
+  background-position:center calc(0% + 60px);
+  }
+  .r-inhalt {
+    flex-direction: column;
+    gap: var(--space-s);
+  }
+  .text-container{
+    width: 80%;
+  }
+  .con2 {
+    flex: 1 1 50%;
+    max-width: 80%;
+  }
+  .r-p {
+    font-size: var(--font-size-s);
+    line-height: var(--space-xl);
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center; 
+    gap: var(--space-2xl);
+  }
+  .footer-div , .footer-logo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+  .footer-div p,
+  .footer-div p a,
+  .footer-div ul li a {
+    line-height: var(--space-xl);
+  }
+  .footer-div h5 {
+    line-height: var(--space-xl);
+  }
+  .footer-logo img {
+    max-height: unset;
+  }
+  .personal , .bewerber , .transportformular-section{
+  padding-top:calc(3* var(--space-3xl)) ;
+  background-size: contain;
+  background-position:center calc(0% + 50px);  
+}
+
+  .bewerber-text, .personal-text, .bewerberForm,
+   .personalForm, .uns-container , .impressum-container,
+   .transportformular-text, .transportformular{
+
+    width: 70%;
+}
+.bewerber-text p,
+.personal-text p,
+.transportformular-text p {
+  line-height: var(--space-xl);
+}
+.personalForm textarea,
+.transportformular textarea {
+  padding-top: var(--space-xl);
+}
+.uns-impressum{
+  padding-top: calc(3* var(--space-4xl)) ;
+  background-size: contain;
+  background-position:center calc(0% + 50px);
+}
+  .uns-container  p , .impressum-container p {
+    line-height: var(--space-xl);
+  }
+}
+
+/************************************************************************/
+/************************************************************************/
+
+@media (max-width: 509px) {
+  .header-nav {
+    width: 100%;
+  }
+
+    .menu-toggle {
+    display: block;
+    position: absolute;
+    bottom: var(--space-m);
+    right: var(--space-l);
+  }
+  .menu {
+    border-radius: 5%;
+    display: block;
+    position: absolute;
+    top: 100%;
+    right: var(--space-m);
+    background-color: #386e98;
+    line-height: var(--space-xl);
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-0.7rem); /*   تبدأ بانزياح لأعلى وتنسدل للأسفل */
+    transition: opacity 0.6s ease, transform 0.6s ease, visibility 0.6s ease;
+  }
+  .menu li {
+    display: block;
+    text-align: center;
+    padding-inline: 0;
+  }
+  .header-nav.open .menu {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+
+/* .dropdown.open .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+.dropdown.open .arrow{
+  transform: rotate(180deg);
+}
+ */
+
+
+
+  
+.dropdown-menu {
+  background-color:#26587e;
+}
+
+
+/* 
+  .dropdown-menu {
+    position: static;
+    transform: none;
+    opacity: 1;
+    display: none;
+  }
+  .dropdown-menu li {
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-1.4rem); /*   تبدأ بانزياح لأعلى وتنسدل للأسفل */
+  /*  transition: opacity 0.6s ease, transform 0.6s ease, visibility 0.6s ease;*/
+  
+ 
+  /* .dropdown.open .dropdown-menu,
+  .dropdown:hover .dropdown-menu,
+  .dropdown:focus-within .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    
+  } 
+ */
+  .section-startseite {
+  padding-top: calc(5* var(--space-3xl));
+  padding-bottom: calc(2* var(--space-xl));
+  }
+
+  .overlay-text{
+    width: 90%;
+  }
+  .overlay-text label{
+    font-size: var(--font-size-m);
+  }
+
+.service-box , .span{
+ width: 100%;
+ /* padding-bottom: calc( 3* var(--space-4xl)); */
+}
+  .service-box p {
+  font-size: var(--font-size-s);
+  line-height: var(--space-xl);
+}
+
+
+ .reinigungsdienste-intro h2 , .transport-text h2,
+ .personalservice-text h2 {
+  margin-inline: 5%;
+  }
+
+.reinigungsdienste-intro .container , .transport-p,
+.personalservice-p{
+  padding-top: var(--space-xl);
+  max-width: 90%;
+}
+
+.reinigungsdienste-intro .container p{
+    font-size: var(--font-size-m);
+    line-height: var(--space-xl);
+}
+
+  .transport-text p, .transport-text p a ,
+  .personalservice-text p , .personalservice-text p a{
+    font-size: var(--font-size-m);
+    line-height: var(--space-xl);
+  }
+
+    .kontakt-kontainer , .transport-kontakt{
+    max-width: 100%;
+  }
+
+  .reinigung-div{
+  padding-top: calc(2* var(--space-4xl)) ;
+  background-size: contain;
+  background-position:center calc(0% + 60px);
+  }
+  
+  .r-inhalt {
+    flex-direction: column;
+    gap: var(--space-s);
+  }
+  
+  .text-container{
+    width: 100%;
+  }
+  .con2 {
+    flex: 1 1 50%;
+    max-width: 100%;
+  }
+  .r-p {
+    font-size: var(--font-size-s);
+    line-height: var(--space-xl);
+  }
+
+
+
+
+  .footer-container {
+    padding-inline: unset;
+    flex-direction: column;
+    align-items: center; 
+    gap: var(--space-2xl);
+  }
+  .footer-div , .footer-logo{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .footer-div p,
+  .footer-div p a,
+  .footer-div ul li a {
+    line-height: var(--space-xl);
+  }
+  .footer-div h5 {
+    line-height: var(--space-xl);
+  }
+  .footer-logo img {
+    max-height: unset;
+  }
+  /*  .container-section{
+    padding-top: var(--space-4xl);
+   } */
+  .personal , .bewerber , .transportformular-section{
+  padding-top:calc(2* var(--space-4xl)) ;
+  background-size: contain;
+  background-position:center calc(0% + 50px);  
+}
+
+    .bewerber-text, .personal-text, 
+    .bewerberForm, .personalForm, 
+    .uns-container , .impressum-container,
+    .transportformular-text, .transportformular{
+
+    width: 90%;
+}
+.bewerber-text p,
+.personal-text p ,
+.transportformular-text p{
+  line-height: var(--space-xl);
+}
+.bewerberForm input, .bewerberForm select,
+.personalForm input, .personalForm select,
+.personalForm textarea,
+.transportformular input, .transportformular select,
+.transportformular textarea {
+  min-height: var(--space-xll);
+}
+
+.lebenslauf-container input, .personalForm textarea,
+.transportformular textarea {
+  padding-top: var(--space-xl);
+}
+.uns-impressum{
+  padding-top: calc( 3 * var(--space-3xl)) ;
+  background-size: contain;
+  background-position:center calc(0% + 50px);
+}
+  .uns-container  p , .impressum-container p {
+    line-height: var(--space-xl);
+  }
+}
+
+/* 📱 إصلاح مشكلة iPhone */
+  @supports (-webkit-overflow-scrolling: touch) {
+  .section-startseite {
+    background-attachment: scroll;
+    background-position: center top; 
+  } 
+} 

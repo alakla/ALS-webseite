@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Professionelle Reinigung von ALS Dienstleistungen – für maximale Sauberkeit und langfristigen Werterhalt Ihrer Immobilie."
+    />
+    <title>Personal Anfrage | ALS Dienstleistungen</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="apple-touch-icon" sizes="180x180" href="ico/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="ico/favicon-16x16.png">
+    <link rel="manifest" href="ico/site.webmanifest">
+
+  </head>
+<body>
+  <div id="header"></div>
+  <main>
+    <section class="personal">
+      <div class="personal-div">
+      <!--   <img src="Images/kasse1.png" alt="Transport Bild" class="transport-image" loading="lazy">
+ -->  <div class="personal-text">
+  <h2>Personalanfrage</h2>
+  
+<p>
+  Sie suchen qualifiziertes Personal für Ihr Unternehmen, Ihre Immobilie oder Ihren Privathaushalt?  
+  Dann zögern Sie nicht, uns direkt telefonisch zu kontaktieren oder das Formular unten zu nutzen.  
+  Wir vermitteln Ihnen erfahrene Fachkräfte – zuverlässig, flexibel und genau auf Ihren Bedarf abgestimmt.  
+  Ob kurzfristige Unterstützung oder langfristige Zusammenarbeit – wir freuen uns auf Ihre Anfrage.
+</p>
+
+  <div class="kontakt-optionen">
+    <p>
+       
+      Rufen Sie uns an unter 
+      <a href="tel:+4917670549424" class="telefon-link">017670549424</a>
+    </p>
+    <p><strong>Oder:</strong> füllen Sie bitte das folgende Formular aus:</p>
+  </div>
+</div>
+
+<form id="personalForm" class="personalForm" action="/personal-anfrage" method="POST">
+    <!-- KONTACKTDATEN -->
+    
+      <legend>Kontaktdaten</legend>
+
+      <div class="input-container">
+    <select id="anrede" name="anrede" required>
+      <option value="" disabled selected hidden></option>
+      <option value="Herr">Herr</option>
+      <option value="Frau">Frau</option>
+    </select>  
+      <label for="anrede">Anrede *</label>
+    <div class="error-message"></div>
+    </div>
+
+    <div class="input-container">
+    <input type="text" name="vorname" id="vorname" minlength="2" maxlength="50" required>
+    <label for="vorname">Vorname *</label>
+    <div class="error-message"></div>
+    </div>
+
+    <div class="input-container">
+    <input type="text" name="nachname" id="nachname" minlength="2" maxlength="50" required>
+    <label for="nachname">Nachname *</label>
+    <div class="error-message"></div>
+    </div>
+
+    <div class="input-container">
+    <input type="text" name="firma" id="firma" minlength="2" maxlength="100" required>
+    <label for="firma">Firmenname / Oder privat *</label>
+    <div class="error-message"></div>
+    </div>
+
+    <div class="input-container">
+    <input type="text" name="strasse" id="strasse" minlength="2" maxlength="100" required>
+    <label for="strasse">Straße *</label>
+    <div class="error-message"></div>
+    </div>
+
+    <div class="input-container">
+    <input type="text" name="plz" id="plz" pattern="\d{5}" maxlength="5" required>
+    <label for="plz">PLZ *</label>
+    <div class="error-message"></div>
+    </div>
+
+    <div class="input-container">
+    <input type="text" name="ort" id="ort" minlength="2" maxlength="50" required>
+    <label for="ort">Ort *</label>
+    <div class="error-message"></div>
+    </div>
+
+    <div class="input-container">
+    <input type="email" name="email" id="email" maxlength="100" required>
+    <label for="email">E-Mail *</label>
+    <div class="error-message"></div>
+    </div>
+
+    <div class="input-container">
+    <input type="text" name="telefon" id="telefon" pattern="^(\+49|0)[1-9][0-9]{6,13}$" title="Bitte geben Sie eine gültige Telefonnummer ein, z.B. +491512345678 oder 015112345678" maxlength="20">
+    <label for="telefon">Telefonnummer</label>
+    <div class="error-message"></div>
+    </div>
+
+    <!-- PERSONALANFRAGE -->
+    <legend>Personalanfrage</legend>
+    <div class="input-container">
+    <input type="text" name="titel" id="titel" minlength="2" maxlength="100" required>
+    <label for="titel">Stellentitel *</label>
+    <div class="error-message"></div>
+    </div>
+
+    <div class="input-container">
+    <input type="text" name="anzahl" id="anzahl" pattern="^([1-9]|[1-9][0-9])$" maxlength="2" required>
+    <label for="anzahl">Anzahl der Mitarbeiter *</label>
+    <div class="error-message"></div>
+    </div>
+
+    <div class="input-container">
+    <input type="text" name="starttermin" id="starttermin" pattern="\d{2}\.\d{2}\.\d{4}" maxlength="10" required>
+    <label for="starttermin">Starttermin (TT.MM.JJJJ) *</label>
+    <div class="error-message"></div>
+    </div>
+
+    <div class="input-container">
+    <input type="text" name="bis" id="bis" pattern="\d{2}\.\d{2}\.\d{4}" maxlength="10">
+    <label for="bis">Bis (TT.MM.JJJJ)</label>
+    <div class="error-message"></div>
+    </div>
+
+    <div class="input-container">
+    <textarea id="anforderungen" name="anforderungen" minlength="10" maxlength="1000" rows="6" required></textarea>
+    <label for="anforderungen">Ihre Anforderungen (z.B. Tätigkeiten, Berufsbezeichnung, benötigte Führerscheinklasse etc.) *</label>
+      <div class="error-message"></div>
+    </div>
+    
+      <label>
+      <small id="charCount">1000 Zeichen verbleibend</small>
+    <br>
+    <small>* Pflichtfelder</small>
+    </label>
+
+  <div class="datenschutz-div">
+  <input type="checkbox" id="datenschutz" name="datenschutz" required>
+  <label for="datenschutz">
+    Mit dem Absenden des Formulars stimme ich der Speicherung und Nutzung meiner Daten zum Zweck der Kontaktaufnahme mit der ALS Dienstleistungen zu.
+    Meine Daten werden nicht an Dritte weitergegeben.
+  <!-- <span class="privacy-hint"> -->
+    <!-- Hinweis: Sie können Ihre Einwilligung jederzeit per E-Mail an als.dienstleistungen@gmail.com widerrufen. -->
+  <!--   Weitere Informationen finden Sie in unserer 
+  <a href="datenschutz.html" target="_blank">Datenschutzerklärung</a>. -->
+  <!-- </span> -->
+  </label>
+  <div class="error-message"></div>
+</div>
+
+    <div class="btn-div">
+<button type="submit" class="btn senden">Anfrage senden</button>
+</div>
+  </form>
+<div id="fehlerListe" class="fehler-liste"></div>
+  <div id="dankeNachricht2" class="hidden"></div>
+  </div>
+  </section>
+</main>
+<div id="footer"></div>
+<script src="script.js"></script>
+  
+</body>
+</html>
