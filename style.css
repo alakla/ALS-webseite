@@ -1762,9 +1762,10 @@ background: linear-gradient(
       margin-bottom: 15px;
       color: var(--bg-blau-dunkel);
       font-size: var(--font-size-m);
-      font-weight: normal;
+      font-weight: bold;
       line-height: var(--space-l);
       text-align: justify;
+      text-decoration: none;
     }
  .uns-container .highlight {
       font-weight: bold;
@@ -2267,7 +2268,7 @@ p {
 
 /* 📱 إصلاح مشكلة iPhone */
   @supports (-webkit-overflow-scrolling: touch) {
-  .section-startseite {
+  .section-startseite, .personalservice-section, .transport{
     background-attachment: scroll;
     background-position: center top; 
   } 
