@@ -1,0 +1,26 @@
+# تأكد أن كل الملفات النصية تستخدم LF
+* text=auto eol=lf
+
+# لو عندك سكربتات مهمة يفضل نحددها يدويًا
+*.sh text eol=lf
+*.js text eol=lf
+*.ts text eol=lf
+*.css text eol=lf
+*.html text eol=lf
+*.json text eol=lf
+*.yml text eol=lf
+*.md text eol=lf
+
+# لو عندك ملفات Batch في ويندوز (ممكن تحتاج CRLF عشان تشتغل صح)
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# لا تغيّر الأسطر لملفات ثنائية (صور، PDF، إلخ)
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.pdf binary
+*.zip binary
+*.exe binary
