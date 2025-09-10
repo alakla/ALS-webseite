@@ -1,13 +1,13 @@
 :root {
   /* colors */
-  --farbe2: rgb(3, 120, 174); /**/
-  --farbe1: rgb(35, 35, 35); /**/
+  --farbe2: rgb(3, 120, 174); 
+  --farbe1: rgb(35, 35, 35); 
   --farbe3: rgb(21, 35, 62);
 
   --border-farbe:rgb(0, 12, 20);
   --bg-weiss: rgb(198, 195, 195);
 
-  --bg-grau1: rgba(54, 55, 55, 0.5); /**/ /*  تم */
+  --bg-grau1: rgba(54, 55, 55, 0.5);
   --bg-grau2: rgba(54, 55, 55, 0.8);
   --bg-grau3: rgba(54, 55, 55, 0.9);
   --bg-max-grau: rgb(54, 55, 55);
@@ -44,17 +44,10 @@
   --bg-orange3: rgb(199, 102, 18, 0.9);
 
   --bg-hell-gruen: rgba(99, 159, 99, 0.4);
-  /* --textfarbe: #d5e5ffff; */
-  /* --textfarbe: rgb(90, 228, 247); */
-  /* --textfarbe: rgb(10, 10, 10); */
   --textfarbe: rgb(237, 232, 232);
   --textfarbe-standard: rgb(51, 51, 51);
 
-  /* --h-farbe:rgb(63, 164, 253); */
   --h-farbe: #38b3f5;
-  /* --h-farbe: #f58438; */
-  /* --h-farbe: #068286; */
-  /* --h-farbe: #143e57; */
   --textfarbe-light: #ffffff;
   --text-shadow: 
     -1px -1px 0 black,
@@ -84,8 +77,8 @@
   --farbe-danger: #dc3545;
   --farbe-warning: #ffc107;
   --farbe-info: #17a2b8;
-  /* 📏 مسافات مرنة (Responsive Spacing) باستخدام clamp */
-  /* الحد الاقصى , القيمة المفضلة , الحد الادنى */ /* clamp   */
+
+  /* 📏 Responsive Spacing */
   --space-3xs: clamp(0.03125rem, 0.075vw, 0.0625rem);
   --space-2xs: clamp(0.0625rem, 0.15vw, 0.125rem);
   --space-xs: clamp(0.125rem, 0.3vw, 0.25rem);
@@ -99,11 +92,11 @@
   --space-3xl: clamp(6rem, 14.4vw, 12rem);
   --space-4xl: clamp(8rem, 19.2vw, 16rem);
 
-  /* ✨ Padding للأقسام */
+  /* ✨ Padding*/
   --section-padding-m: clamp(1rem, 5vw, 4rem);
   --section-padding-l: clamp(2rem, 8vw, 6rem);
 
-  /* ✍️ الخط */
+  /* ✍️ Font*/
 
   --font: 'Source Sans Pro',sans-serif;
   --font-size-s: 0.875rem;
@@ -118,19 +111,16 @@ html, body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
-/*   position: relative; */
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-  /*هذا يجعل حساب الأبعاد أكثر بديهية وأسهل في التصميم.padding و border. يعني أن العرض والارتفاع يشملان   */
   font-family: var(--font);
   font-size: var(--font-size-m);
   color: var(--textfarbe);
   font-style: normal;
   letter-spacing: var(--space-3xs);
   background-color: var(--bg-blau);
-/*   text-shadow: var(--space-2xs) var(--space-2xs) var(--space-s) black;
- */}
+}
  
 
 * {
@@ -144,19 +134,7 @@ html, body {
 *:before,
 *:after {
   box-sizing: inherit;
-} /* htmlوبالتالي عندما نريد تغييرها لكامل المشروع يكفي ان نغير القيمة في عنصر  html كل العناصر ترث القيمة من  عنصر ال  */
-
-/***** BODY ********************************************/
-/***** BODY ********************************************/
-
-/*body{ 
-  background-color: var(--h-farbe); */
-   /* background: linear-gradient(var(--bg-blau1)),url("Images/ur2.png");
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; 
-}*/
+}
 
 /***** HEADER ********************************************/
 /***** HEADER ********************************************/
@@ -164,7 +142,6 @@ html, body {
 header {
   
   box-shadow: 0 10px 10px var(--bg-orange1);
-  /* border-bottom: var(--bg-orange) 16px solid; */
    background: linear-gradient(
     to top,
     #386e98 0%,
@@ -212,7 +189,6 @@ header {
   padding: var(--space-m);
   display: block;
   color: var(--bg-blau-dunkel);
-  /* text-shadow: var(--text-shadow-hell); */
   text-decoration: none;
   font-weight: bold;
   
@@ -251,7 +227,7 @@ header {
 .dropdown-menu {
   display: block;
   position: absolute;
-  top:110%; /* أسفل الزر مباشرة */
+  top:110%;
   left: 0;
   background-color: #386e98; 
   border-radius: 5%;
@@ -291,9 +267,6 @@ header {
 main{
   min-height: 100%;
   flex: 1;
-  /* display: flex;
-  flex-direction: column; */
-  
 }
 
 .section-startseite {
@@ -319,28 +292,11 @@ main{
 
 .reinigung-div,
 .bewerber {
-  /* position: relative; */
   min-height: 100%;
   padding-top: var(--space-3xl);
 }
-/*
-.startseite,
-.r-div {
-  /* position: fixed; */
-/*   background: linear-gradient(to right,var(--bg-grau2),var(--bg-gruen2)),url("Images/ur2.png");
-  height: 100%;
-  width: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; */
 
 .overlay-text {
-  /* position: relative; */
-  /* position: absolute; */
-/*   top: 0;
-  left: 0; */
-/*   width: 100%;
-  min-height: 100%; */
   width: 50%;
   display: flex;
   flex-direction: column;
@@ -350,7 +306,6 @@ main{
   background-color: var(--bg-blau1);
   padding: var(--space-xl);
   border-radius: 50%;
-  /* margin-inline: var(--space-4xl); */
   box-shadow: 0 10px 10px var(--bg-orange1);
   opacity: 0;
   transform: translateY(-50px) scale(0.95);
@@ -361,7 +316,6 @@ main{
   font-size: var(--font-size-xl);
   margin-bottom: var(--space-m);
   color: var(--bg-orange);
-  /* text-shadow: var(--text-shadow); */
   text-decoration: none;
   font-weight: bold;
 }
@@ -372,7 +326,6 @@ main{
   font-weight: bold;
 }
 
-/* الحركة */
 @keyframes welcomeIn {
   0% {
     opacity: 0;
@@ -386,8 +339,6 @@ main{
 .btn {
   display: inline-block;
   background-color: var(--bg-blau);
-  /* background-image: linear-gradient(10deg,var(--bg-blau) 75%,var(--bg-weiss));
-   */
   padding: var(--space-s) var(--space-m);
   text-decoration: none;
   cursor: pointer;
@@ -409,7 +360,7 @@ main{
 
 
 /***********************************************************/
-/**************** CSS: تصميم قسم Reinigungsdienste *************************/
+/**************** Reinigungsdienste *************************/
 .reinigung{
     
        background: linear-gradient(
@@ -421,7 +372,6 @@ main{
 }
 
 .reinigungsdienste-intro {
-  /* background-color: #2a4c6c; */
   padding-top: var(--space-2xl);
   padding-inline:  var(--space-l);
   text-align: center;
@@ -430,7 +380,6 @@ main{
 }
 
 .reinigungsdienste-intro .container {
-  /* padding-top: var(--space-xl); */
   max-width: 45%;
   margin: 0 auto;
   text-align: justify;
@@ -444,7 +393,6 @@ main{
     color: var(--bg-orange);
   font-weight: 800;
   padding: var(--space-m);
-  /* border: 1px var(--bg-blau-dunkel) solid; */
   border-radius: 5%;
   box-shadow: 0 20px 10px var(--bg-blau-dunkel);
 }
@@ -454,47 +402,17 @@ main{
 font-size: var(--font-size-m);
 line-height: var(--space-l);
 font-weight: normal;
-    /* color: #a2a2a3; */
-  /* color: var(--bg-blau-dunkel); */
-  /* text-shadow: var(--text-shadow-hell); */
 }
 
 /*********************************************************/
 /********************Reinigungs-Boxes*********************/
 /*********************************************************/
-/*.reinigungsdienste-section{
- background: linear-gradient(var(--bg-blau1), var(--bg-blau1)), url("Images/urein1.png");
-background-size: cover;       
-  background-position: center;  
-  background-repeat: no-repeat;
-  
-}*/
 
 .reinigungsdienste-section {
-  /* background-color: #2a4c6c; */
-  /* background: linear-gradient(#2a4c6c, white); */
   padding: var(--space-2xl) var(--space-l);
   text-align: center;
   border-bottom: 3px solid var(--bg-orange);
-  /* position: relative; */
-  /* height: 100%; */
-
 }
- 
-
-/* .reinigungsdienste-section h2 {
-  
-  margin-inline: 30%;
-  
-  margin-bottom: var(--space-xl);
-    color: var(--bg-blau-dunkel);
-  font-weight: 800;
-  background-color: var(--bg-orange2);
-  padding: var(--space-m);
-  border-radius: 50%;
-  box-shadow: 0 20px 10px var(--bg-blau);
-} */
-
 .services-grid {
   display: flex;
   flex-wrap: wrap;
@@ -568,9 +486,9 @@ background: linear-gradient(to top,
   border-style: solid;
   border-width: 2px;
   border-color: var(--bg-blau-dunkel);
-  background-size: cover;       /* يجعل الصورة تغطي div بالكامل */
-  background-position: center;  /* يضع الصورة في المنتصف */
-  background-repeat: no-repeat; /* يمنع تكرار الصورة */
+  background-size: cover;   
+  background-position: center; 
+  background-repeat: no-repeat;
   padding-inline: var(--space-m);
   padding-top: var(--space-m); 
   padding-bottom: calc( 2 * var(--space-4xl));
@@ -582,23 +500,10 @@ background: linear-gradient(to top,
   width: 25%;
   box-shadow: 0 20px 10px var(--bg-blau);
 }
-/* الكلاس عند الظهور */
 .service-box.visible {
   opacity: 1;
   transform: translateY(0);
 }
-
-/* .transport-text h2 {
-  
-    margin-inline: 30%;
-  margin-bottom: var(--space-xl);
-  color: var(--bg-blau-dunkel);
-  font-weight: 800;
-  background-color: var(--bg-orange2);
-  padding: var(--space-m);
-  border-radius: 50%;
-  box-shadow: 0 20px 10px var(--bg-blau-dunkel);
-} */
 
 .service-box:hover {
   transform: translateY(20px);
@@ -609,20 +514,13 @@ background: linear-gradient(to top,
   margin-top: var(--space-s);
   margin-bottom: var(--space-m);
   color: var(--bg-orange);
-  font-weight: 600;
-  /* text-shadow: var(--text-shadow); */
-  /* text-shadow: var(--text-shadow-hell); */
-}
+  font-weight: 600;}
 
 .service-box p  {
-  /* color: #7dadc9; */
-  /* color: #8a8d8d; */
   color: black;
-  /* color: #a2a2a3; */
   font-size: var(--font-size-m);
   font-weight: normal;
   line-height: var(--space-ll);
-  /* text-shadow: var(--text-shadow); */
 }
 #mehr{
   color: #359ed6;
@@ -631,38 +529,6 @@ background: linear-gradient(to top,
 /*********************************************************/
 /********Personalservice*************************************/
 /**********************************************************/
-
-/* .personalservice-section {
- position: fixed;
-   top: 0vh;
-  bottom: 0vh;
-   width: 100%;
-  height: 100%;
- background: linear-gradient(
-    to bottom,
-    transparent 0%,
-    transparent 50%,
-    var(--bg-blau) 100%
-  ),
-    url("Images/kasse4.png");
-    background-size: cover;
-  background-repeat: no-repeat;
-  background-position:center;
-  z-index: -1;
-  pointer-events: none;
-   will-change: transform;
-  transform-origin: center top;
-}
-
-.personalservice-content {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  padding-top: 600px;
-  
-}
- */
  .personalservice-section {
 min-height: 100%;
 padding-top:  calc(3* var(--space-4xl));
@@ -701,21 +567,12 @@ background: linear-gradient(
   text-align: center;
 }
 
-/* .personalservice-content.show {
-  opacity: 1;
-  transform: translateY(0);
-} */
-
 .personalservice-p {
   max-width: 50%;
   margin: 0 auto;
   text-align: justify;
 
 }
-
-/* .personalservice-text h2 {
-  background-color: var(--bg-blau-3);
-} */
 
 .personalservice-text p {
   color: black;
@@ -730,7 +587,6 @@ font-weight: normal;
   padding-top: var(--space-l);
   padding-bottom: var(--space-l);
 }
-/*****/
 
 .personalservice-grid {
     display: flex;
@@ -775,22 +631,6 @@ font-weight: normal;
   ),
   url("Images/kasse2.png");
 }
-/* .personalservice-image img {
-  width: 75%;
-  min-height: 500px;
-  border-radius: 10px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-}
- */
-/* .anfrage-btn{
-
-  padding: var(--space-s) var(--space-m);
-  width: 20%;
-} */
-
-
-
-
 
 /* Responsive */
 @media (max-width: 900px) {
@@ -804,14 +644,9 @@ font-weight: normal;
   }
 }
 
-
-
 /*********************************************************/
 /********Transport*************************************/
 /**********************************************************/
-
-
-
 .transport{
 min-height: 100%;
 padding-top:  calc(3* var(--space-4xl));
@@ -837,7 +672,6 @@ background: linear-gradient(
 
 
 .transport-text{
-  /* background-color: var(--bg-blau1); */
   background: linear-gradient(
     to top,
     #386e98 0%,
@@ -850,12 +684,7 @@ background: linear-gradient(
   border-top: 3px solid var(--bg-orange);
   text-align: center;
 }
-/* .transport-text h2 {
-background-color: var(--bg-blau-3);
-} */
-
 .transport-p{
-  /* padding-top: var(--space-m); */
   max-width: 45%;
   margin: 0 auto;
   text-align: justify;
@@ -870,21 +699,18 @@ background-color: var(--bg-blau-3);
   text-align: center;
 }
 .transport-kontakt{
-  /* padding-top: var(--space-xl); */
-    max-width: 50%;
+  max-width: 50%;
   margin: 0 auto; 
   text-align: start;
   
 }
 
-/* .transport-kontakt p , */
 .transport-text p  {
 
   color: black;
 font-size: var(--font-size-m);
 line-height: var(--space-l);
 font-weight: normal;
- /* overflow: hidden; */
 }
 
 
@@ -898,7 +724,6 @@ font-weight: normal;
 }
 
 .transport-kontakt p a:hover {
-  /* color: var(--h-farbe); */
   text-decoration: underline;
 }
 
@@ -954,124 +779,26 @@ background: linear-gradient(to top,
   border-style: solid;
   border-width: 2px;
   border-color: var(--bg-blau-dunkel);
-  background-size: cover;       /* يجعل الصورة تغطي div بالكامل */
-  background-position: center;  /* يضع الصورة في المنتصف */
-  background-repeat: no-repeat; /* يمنع تكرار الصورة */
-  /* padding-inline: var(--space-m);*/
+  background-size: cover;    
+  background-position: center;  
+  background-repeat: no-repeat; 
   padding-top: var(--space-m); 
   padding-bottom: calc( 2 * var(--space-4xl));
   text-align: center; 
   opacity: 0;
   transform: translateY(20px);
   transition: all 0.6s ease;
-  /* cursor: pointer; */
   width: 20%;
   box-shadow: 0 20px 10px var(--bg-blau);
 }
-
-/* .tragen , .packen , .abbauen , .liefern{
-  flex-grow: 1; 
-  
-} */
-
-/* .span:hover {
-  transform: translateY(-5px);
-  background-color: var(--bg-blau);
-  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
-} */
-
 .span h3 {
-/*   background-color: var(--bg-blau);
-  margin-top: var(--space-s);
-  padding-block: var(--space-m);
-  margin-inline: var(--space-l); */
   color: var(--bg-orange);
   font-weight: 600;
-  /* border-radius: 5%; */
-  /* box-shadow: 0 20px 10px var(--bg-blau-dunkel); */
-
 }
-/* عند الدخول */
 .span.visible {
   opacity: 1;
   transform: translateY(0);
 }
-
-
-/*********************************************************/
-/**************Transportformular**************************/
-/*********************************************************/
-
-    /* .transport-container {
-      max-width: 700px;
-      margin: 0 auto;
-      padding: 40px 20px;
-      background-color: #f8f8f8;
-      border-radius: 10px;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    }
-
-    .transport-container h2 {
-      text-align: center;
-      margin-bottom: 30px;
-      font-size: 2em;
-      color: var(--primary-color, #003366);
-    }
-
-    .transport-form label {
-      display: block;
-      margin-top: 20px;
-      font-weight: bold;
-      color: #333;
-    }
-
-    .transport-form input,
-    .transport-form textarea {
-      width: 100%;
-      padding: 12px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      margin-top: 5px;
-      font-size: 1em;
-    }
-
-    .transport-form textarea {
-      resize: vertical;
-      min-height: 120px;
-    }
-
-    .transport-form button {
-      margin-top: 30px;
-      width: 100%;
-      padding: 14px;
-      background-color: var(--primary-color, #003366);
-      color: white;
-      font-size: 1em;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      transition: background 0.3s;
-    }
-
-    .transport-form button:hover {
-      background-color: var(--secondary-color, #0055aa);
-    }
-
-    .transport-image {
-      width: 100%;
-      height: auto;
-      border-radius: 8px;
-      margin-bottom: 30px;
-    }
-
-    @media (max-width: 600px) {
-      .transport-container {
-        padding: 20px 15px;
-      }
-    }
-  
- */
-
 
 /*********************************************************/
 /**************Reinigungs-Seiten**************************/
@@ -1142,16 +869,6 @@ background: linear-gradient(to top,
 
 
 .r-inhalt , .text-container2{
-/*   display: flex;
-  padding-inline: var(--space-m);
-  padding-top: var(--space-s);
-  height: calc(100vh - (var(--space-3xl)));
-  flex-flow: row nowrap;
-  gap: var(--space-xl);
-  justify-content: center;
-  align-content: center;
-  align-items: center; */
-
   position: relative;
   display: flex;
   background: linear-gradient(
@@ -1160,15 +877,10 @@ background: linear-gradient(to top,
     #26587e 50%,
     var(--bg-blau) 100%
   ); 
-  /* margin-top: var(--space-3xl); */
-  /* margin-inline: 30%; */
   padding-top: var(--space-xl);
   padding-bottom:  var(--space-xl);
   width: 100%;
   min-height: 100%;
-  /* padding-inline: var(--space-m);
-  padding-top: var(--space-s);
-  height: calc(100% - (var(--space-3xl))); */
   flex-flow: column nowrap;
   gap: var(--space-m);
   justify-content: center;
@@ -1177,50 +889,7 @@ background: linear-gradient(to top,
 
 }
 
-
-
-/* .ur-image-div{
-background: url("Images/markt.png");
-}
-.fa-image-div{
-background: url("Images/far2.png");
-}
-.fen-image-div{
-  background: url("Images/fr.png");
-}
-.tep-image-div{
-  background: url("Images/tr.png");
-}
-.ge-image-div{
-background: url("Images/gr.png");
-}
-.so-image-div{
-background: url("Images/sr.png");
-}
-.image-div {
-  box-shadow: 0 var(--space-l) var(--space-l) #498192;
-  border-radius: var(--space-2xl);
-  border-width: 20px;
-  flex: 1 1 50%;
-  min-height: 80%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
- */
-
-
-
-
 .text-container {
-/*   flex: 1 1 40%;
-  padding-inline: var(--space-l);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  gap: var(--space-l); */
 text-align: center;
 padding: var(--space-l);
   margin-bottom: 1rem;
@@ -1242,23 +911,7 @@ font-weight: normal;
 padding-bottom: var(--space-l);
 }
 
-/* .text-container2 {
-  position: relative;
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: space-between;
-  align-items: center;
-  align-content: center;
-  background: linear-gradient(
-    to right,
-    var(--bg-grau1),
-    var(--bg-blau1)
-  );
-  padding: var(--space-m);
-  gap: var(--space-xl);
-} */
 .con2 {
-  /* flex: 1 1 50%; */
   max-width: 50%;
   display: flex;
   flex-flow: column wrap;
@@ -1281,26 +934,9 @@ padding-bottom: var(--space-l);
   border-color: var(--border-farbe);
 }
 
-/* .r-h-container {
-  margin-bottom: var(--space-m);
-} */
-/* .r-h {
-  color: var(--h-farbe);
-  max-width: 100%;
-}
-.r-p {
-  font-size: var(--font-size-l);
-  font-weight: normal;
-  color: var(--textfarbe);
-  text-align: justify;
-  line-height: var(--space-xl);
-  max-width: 100%;
-  max-height: 100%;
-} */
 .ziel {
   font-size: var(--font-size-m);
   line-height: var(--space-l);
-  /* text-align: center; */
 }
 
 /*********************************************************/
@@ -1309,15 +945,12 @@ padding-bottom: var(--space-l);
 footer{
   position: relative;
   width: 100%;
-  /* padding-top: calc(2 * var(--space-3xl)); */
-  /* background-color: #386e98; */
   background: linear-gradient(
     to bottom,
     #386e98 0%,
     #26587e 50%,
     var(--bg-blau) 100%
   );
-  /* border-top: 3px solid var(--bg-blau-dunkel); */
 }
 
 .footer-container {
@@ -1370,20 +1003,15 @@ footer{
   color: var(--bg-orange);
   font-size: var(--font-size-m);
   line-height: var(--space-l);
-  /* text-shadow: var(--text-shadow-hell); */
 }
 
 .footer-div ul li a:hover,
 .footer-div p a:hover {
-  /* color: var(--h-farbe); */
   text-decoration: underline;
 }
 .footer-bottom {
   text-align: center;
   padding-block: var(--space-xl);
-  /* border-top: 3px solid var(--bg-orange); */
-    /* box-shadow:inset 0 10px 10px var(--bg-orange1); */
-  /* border-bottom: var(--bg-orange) 16px solid; */
    background: linear-gradient(
     to bottom,
     #386e98 0%,
@@ -1395,7 +1023,6 @@ footer{
   font-size: var(--font-size-m);
   font-weight: bold;
   color: var(--bg-orange);
-  /* text-shadow: var(--text-shadow); */
 }
 
 /************************************************************************/
@@ -1442,7 +1069,6 @@ padding-top:  calc(3* var(--space-4xl));
 .bewerber-div,
 .personal-div ,
 .transportformular-div{
-  /* border: #dc3545 2px solid; */
     position: relative;
   display: flex;
   background: linear-gradient(
@@ -1451,15 +1077,10 @@ padding-top:  calc(3* var(--space-4xl));
     #26587e 50%,
     var(--bg-blau) 100%
   ); 
-  /* margin-top: var(--space-3xl); */
-  /* margin-inline: 30%; */
   padding-top: var(--space-xl);
   padding-bottom:  var(--space-3xl);
   width: 100%;
   min-height: 100%;
-  /* padding-inline: var(--space-m);
-  padding-top: var(--space-s);
-  height: calc(100% - (var(--space-3xl))); */
   flex-flow: column nowrap;
   gap: var(--space-m);
   justify-content: center;
@@ -1470,14 +1091,6 @@ padding-top:  calc(3* var(--space-4xl));
 .bewerber-text,
 .personal-text,
 .transportformular-text{
-/*  border: var(--bg-max-gruen) 2px solid;
-  border-radius: 5px; 
-   padding: var(--space-m); 
-   background: linear-gradient(
-    to right,
-    var(--bg-grau1),
-    var(--bg-gruen1)
-  ); */ 
   padding: var(--space-l);
   margin-bottom: 1rem;
   width: 50%;
@@ -1507,11 +1120,6 @@ border-radius: 5px;
   padding-inline: var(--space-l);
   padding-block: var(--space-m);
   width: 50%;
-  /*   background: linear-gradient(
-    to right,
-    var(--bg-grau1),
-    var(--bg-blau1)
-  ); */
   background-color: #26587e;
 }
 
@@ -1522,8 +1130,6 @@ border-radius: 5px;
 
 
 .kontakt-optionen {
-  
-  /* padding: 1rem; */
   margin-top: 1rem;
 }
 .kontakt-optionen p {
@@ -1539,21 +1145,9 @@ border-radius: 5px;
   text-decoration: underline;
 }
 
-/*  .form-row {
-    display: flex;
-    gap: var(--space-s);
-    flex-wrap: wrap;
-  }
-    
-  .form-row > input{
-    flex: 1;
-    min-width: calc(2*(var(--space-2xl)));
-  } */
-/* .bewerberForm label, */
 .personalForm legend ,
 .bewerberForm legend ,
 .transportformular legend{
-  /* border: #d90a59 2px solid; */
   display: block;
   margin-top: var(--space-m);
   font-weight: bold;
@@ -1566,9 +1160,6 @@ border-radius: 5px;
 .transportformular textarea {
   width: 100%;
   min-height: var(--space-ll);
-/*   padding-top: var(--space-m);
-  padding-left: var(--space-m);
-  margin-top: var(--space-s); */
   padding-top: var(--space-m);
   padding-bottom: var(--space-s);
   padding-left: var(--space-s);
@@ -1579,18 +1170,6 @@ border-radius: 5px;
 }
 
 
-/* placeholder label */
-
-
-
-/* .input-container input,
-.input-container select,
-.input-container textarea {
-  width: 100%;
-  padding: 1rem 0.5rem 0.5rem 0.5rem;
-  font-size: 1rem;
-} */
-
 .input-container label {
   position: absolute;
   top: 0;
@@ -1598,7 +1177,6 @@ border-radius: 5px;
   color: #333;
   font-size: 0.8rem;
   pointer-events: none;
-  /* transition: 0.2s ease all; */
   background-color: transparent;
 
   
@@ -1606,29 +1184,14 @@ border-radius: 5px;
 
 
 #lebenslauf {
-  color: #333; /* أو أي لون غامق يناسب الخلفية */
+  color: #333;
 
 }
 
-/*  .input-container input:focus + label,
- .input-container select:focus + label, */
-/* .input-container input:valid + label, */
- /* .input-container textarea:focus + label, */ 
-/* .input-container textarea:valid + label */
-/* .input-container input:not(:placeholder-shown) + label,
-.input-container textarea:not(:placeholder-shown) + label */
-/* .input-container select:focus + label,
-.input-container select:valid + label */
-
-
-
 .datenschutz-div {
-/*   border: 1px solid #a6c6de;
-  border-radius: 5px; */
   width: 100%;
   display: inline-flex;
   align-items:flex-start;
-  /* gap: 10px; */
   font-size: var(--font-size-s);
  box-sizing: border-box;
   word-wrap: break-word;
@@ -1637,12 +1200,10 @@ border-radius: 5px;
 }
 
 .datenschutz-div input[type="checkbox"] {
-/* margin-top: 4px; */
 width: auto;
 flex-shrink: 0;
 }
 .datenschutz-div label {
-  /* margin-top: 4px; */
   margin-left: 4px;
   cursor: pointer;
    display: block;
@@ -1650,29 +1211,9 @@ flex-shrink: 0;
   word-break: break-word;
   font-size: var(--font-size-s);
 }
-/* .datenschutz-div .privacy-hint {
-  display: block;
-  margin-top: 5px;
-  width: 100%;
-  word-break: break-word;
-  
-}
-
-.datenschutz-div .privacy-hint a {
-  color: var(--h-farbe);
-  text-decoration: none;
-}
-
-.datenschutz-div .privacy-hint a:hover {
-  text-decoration: underline;
-}
- */
-
-
 
 .btn-div{
   text-align: left;
-  /* margin-top: 8px; */
 }
 .senden{
   margin-top: var(--space-m);  
@@ -1689,12 +1230,10 @@ color: var(--h-farbe);
   display: none;
 }
 
-/* لون الحقل في حال الخطأ */
 .input-error {
   border: 2px solid red;
 }
 
-/* مظهر رسالة الخطأ */
 .error-message {
   color: red;
   font-size: 0.85em;
@@ -1749,14 +1288,8 @@ background: linear-gradient(
   color: var(--bg-orange);
   margin-top: var(--space-xl);
   margin-bottom: var(--space-m);
-  /* text-decoration:underline; */
-  /* text-shadow: var(--text-shadow-hell); */
 }
-  /* .uns-container  h2 {
-      color: #881818;
-      font-size: 1.5em;
-      margin-top: 30px;
-    } */
+
 
   .uns-container  p , .impressum-container p {
       margin-bottom: 15px;
@@ -1773,78 +1306,6 @@ background: linear-gradient(
       font-size: 1.1em;
       margin-top: 20px;
     }
-
-/************************************************************************/
-/*********  Impressum *************/
-/************************************************************************/
-/* body {
-  font-family: Arial, sans-serif;
-  background-color: #f6f6f6;
-  margin: 0;
-  padding: 0;
-  color: #333;
-} */
-
-/* .kontakt-container {
-  max-width: 900px;
-  margin: var(--space-3xl) auto;
-  padding: 40px 20px;
-  background-color: #fff;
-}
- */
-/* h1 {
-  color: #005A9C;
-  margin-bottom: 10px;
-}
-
-p {
-  margin-bottom: 15px;
-}
- */
-/* .contact-info {
-  margin-bottom: 30px;
-  line-height: 1.8;
-}
-
-.contact-info strong {
-  display: inline-block;
-  width: 100px;
-} */
-
-
-
-
-/* .whatsapp-button {
-  display: inline-block;
-  
-
-  padding: 12px 20px;
-  border-radius: 6px;
-
-  text-align: center;
-  
-} */
-
-
-
-/* .map-section {
-  margin-top: 30px;
-  border-radius: 8px;
-  overflow: hidden;
-} */
-
-/* @media (max-width: 600px) {
-  .contact-info strong {
-    width: auto;
-    display: block;
-    margin-bottom: 5px;
-  }
-
-  .whatsapp-button {
-    width: 100%;
-    text-align: center;
-  }
-} */
 
 
 /************************************************************************/
@@ -1885,7 +1346,7 @@ p {
     line-height: var(--space-xl);
     opacity: 0;
     pointer-events: none;
-    transform: translateY(-0.7rem); /*   تبدأ بانزياح لأعلى وتنسدل للأسفل */
+    transform: translateY(-0.7rem);
     transition: opacity 0.6s ease, transform 0.6s ease, visibility 0.6s ease;
   }
   .header-nav.open .menu {
@@ -1903,32 +1364,7 @@ p {
 .dropdown-menu {
   background-color:#26587e;
 }
-/* 
-  .dropdown-menu {
-    position: static;
-    transform: none;
-    opacity: 1;
-    display: none;
-  }
-  .dropdown-menu li {
-    display: block;
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(-1.4rem); /*   تبدأ بانزياح لأعلى وتنسدل للأسفل 
-    transition: opacity 1.6s ease, transform 1.6s ease, visibility 1.6s ease;
-  }
-  .dropdown.open .dropdown-menu li,
-  .dropdown:hover .dropdown-menu li,
-  .dropdown:focus-within .dropdown-menu li {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
-      background: linear-gradient(
-    to right,
-    var(--bg-max-grau),
-    var(--bg-blau)
-  );
-  } */
+
   .section-startseite {
   padding-top: calc(5* var(--space-3xl));
   padding-bottom: calc(2* var(--space-3xl));
@@ -2068,7 +1504,7 @@ p {
     line-height: var(--space-xl);
     opacity: 0;
     pointer-events: none;
-    transform: translateY(-0.7rem); /*   تبدأ بانزياح لأعلى وتنسدل للأسفل */
+    transform: translateY(-0.7rem);
     transition: opacity 0.6s ease, transform 0.6s ease, visibility 0.6s ease;
   }
   .menu li {
@@ -2082,48 +1518,10 @@ p {
     pointer-events: auto;
   }
 
-/* .dropdown.open .dropdown-menu {
-  opacity: 1;
-  visibility: visible;
-  transform: translateY(0);
-}
-.dropdown.open .arrow{
-  transform: rotate(180deg);
-}
- */
-
-
-
-  
 .dropdown-menu {
   background-color:#26587e;
 }
 
-
-/* 
-  .dropdown-menu {
-    position: static;
-    transform: none;
-    opacity: 1;
-    display: none;
-  }
-  .dropdown-menu li {
-    display: block;
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(-1.4rem); /*   تبدأ بانزياح لأعلى وتنسدل للأسفل */
-  /*  transition: opacity 0.6s ease, transform 0.6s ease, visibility 0.6s ease;*/
-  
- 
-  /* .dropdown.open .dropdown-menu,
-  .dropdown:hover .dropdown-menu,
-  .dropdown:focus-within .dropdown-menu {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
-    
-  } 
- */
   .section-startseite {
   padding-top: calc(5* var(--space-3xl));
   padding-bottom: calc(2* var(--space-xl));
@@ -2138,7 +1536,6 @@ p {
 
 .service-box , .span{
  width: 100%;
- /* padding-bottom: calc( 3* var(--space-4xl)); */
 }
   .service-box p {
   font-size: var(--font-size-s);
@@ -2223,9 +1620,7 @@ p {
   .footer-logo img {
     max-height: unset;
   }
-  /*  .container-section{
-    padding-top: var(--space-4xl);
-   } */
+  
   .personal , .bewerber , .transportformular-section{
   padding-top:calc(2* var(--space-4xl)) ;
   background-size: contain;
@@ -2266,7 +1661,6 @@ p {
   }
 }
 
-/* 📱 إصلاح مشكلة iPhone */
   @supports (-webkit-overflow-scrolling: touch) {
   .section-startseite, .personalservice-section, .transport{
     background-attachment: scroll;
